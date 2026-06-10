@@ -8,54 +8,14 @@ function url(path: string) {
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  // REGRA: adicionar uma rota aqui SOMENTE após o page.tsx correspondente existir.
+  // Rotas pendentes são adicionadas conforme cada página é criada e validada.
   return [
     {
       url: url("/"),
       lastModified: BUILD_DATE,
-      changeFrequency: "weekly",
+      changeFrequency: "weekly" as const,
       priority: 1.0,
-    },
-    {
-      url: url("/transporte-terrestre-executivo-londrina"),
-      lastModified: BUILD_DATE,
-      changeFrequency: "monthly",
-      priority: 0.95,
-    },
-    {
-      url: url("/londrina-guarulhos"),
-      lastModified: BUILD_DATE,
-      changeFrequency: "monthly",
-      priority: 0.95,
-    },
-    {
-      url: url("/londrina-sao-paulo"),
-      lastModified: BUILD_DATE,
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-    {
-      url: url("/airport-transfer-londrina"),
-      lastModified: BUILD_DATE,
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-    {
-      url: url("/motorista-executivo-londrina"),
-      lastModified: BUILD_DATE,
-      changeFrequency: "monthly",
-      priority: 0.85,
-    },
-    {
-      url: url("/transfer-corporativo-londrina"),
-      lastModified: BUILD_DATE,
-      changeFrequency: "monthly",
-      priority: 0.85,
-    },
-    {
-      url: url("/contato"),
-      lastModified: BUILD_DATE,
-      changeFrequency: "monthly",
-      priority: 0.7,
     },
   ]
 }
