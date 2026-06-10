@@ -20,9 +20,9 @@ import { business, whatsappUrl } from "@/lib/business"
 export const metadata: Metadata = pageMetadata.home
 
 const serviceSchema = buildServiceSchema({
-  name: "Londrina Executivo — Mobilidade Executiva Premium",
+  name: "Londrina Executivo — Transporte Executivo Premium em Londrina",
   description: business.description,
-  serviceType: "Empresa de Mobilidade Executiva",
+  serviceType: "Transporte Executivo Premium",
   url: business.url,
   areaServed: ["Londrina", "Paraná", "São Paulo", "Curitiba", "Guarulhos"],
   image: `${business.url}/og-home.jpg`,
@@ -111,7 +111,7 @@ export default function HomePage() {
               }}>
                 <span style={{ width: "6px", height: "6px", borderRadius: "50%", background: "#C9A84C", flexShrink: 0 }} />
                 <span style={{ color: "#C9A84C", fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase" }}>
-                  Mobilidade Executiva · Londrina · Paraná
+                  Transporte Executivo Premium · Londrina · Paraná
                 </span>
               </div>
 
@@ -119,7 +119,7 @@ export default function HomePage() {
                 fontSize: "clamp(2.25rem, 5vw, 3.5rem)", fontWeight: 900,
                 color: "#F0F0F0", lineHeight: 1.1, letterSpacing: "-0.02em", marginBottom: "1.5rem",
               }}>
-                Mobilidade Executiva
+                Transporte Executivo Premium
                 <span style={{ display: "block", color: "#C9A84C" }}>em Londrina</span>
               </h1>
 

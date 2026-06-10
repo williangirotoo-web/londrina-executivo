@@ -15,9 +15,9 @@ export const business = {
     "Transfer para aeroportos, rotas interestaduais, motorista executivo " +
     "e transporte corporativo premium para empresas e executivos.",
   url:          "https://londrinaexecutivo.com.br",
-  phone:        "+55 44 99000-0000",        // substituir após publicação
-  phoneDisplay: "(44) 99000-0000",          // substituir após publicação
-  whatsapp:     "5544990000000",            // substituir após publicação
+  phone:        "+55 44 99891-3040",
+  phoneDisplay: "(44) 99891-3040",
+  whatsapp:     "5544998913040",
   email:        "contato@londrinaexecutivo.com.br",
   founded:      "2025",
   address: {
