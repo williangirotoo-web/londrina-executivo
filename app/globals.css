@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Design Tokens ─────────────────────────────────────────── */
+:root {
+  /* Brand */
+  --gold:          #C9A84C;
+  --gold-light:    #E2C97E;
+  --gold-dark:     #9A7A2E;
+  --gold-subtle:   rgba(201, 168, 76, 0.12);
+  --gold-border:   rgba(201, 168, 76, 0.25);
+
+  /* Backgrounds */
+  --bg-primary:    #0A0A0A;
+  --bg-surface:    #141414;
+  --bg-card:       #1C1C1C;
+  --bg-elevated:   #222222;
+
+  /* Text */
+  --text-primary:  #F0F0F0;
+  --text-secondary:#A8A8A8;
+  --text-muted:    #6B6B6B;
+
+  /* Borders */
+  --border:        #2A2A2A;
+  --border-subtle: #1E1E1E;
+
+  /* Status */
+  --success:       #4ade80;
+  --info:          #60a5fa;
+}
+
+/* ── Base ───────────────────────────────────────────────────── */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+}
+
+/* ── Layout helpers ─────────────────────────────────────────── */
+.container-exec {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.section-py {
+  padding: 5rem 1.5rem;
+}
+
+/* ── Hero split desktop ─────────────────────────────────────── */
+.hero-image-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  z-index: 0;
+}
+
+/* Hero image mobile — abaixo dos CTAs */
+.hero-mobile-image {
+  position: relative;
+  padding-top: 56.25%;
+  overflow: hidden;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .hero-mobile-image {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-image-wrapper {
+    display: none;
+  }
+}
+
+/* ── Gold line divider ──────────────────────────────────────── */
+.gold-line {
+  width: 48px;
+  height: 2px;
+  background: var(--gold);
+  margin: 0 auto 1.5rem;
+}
+
+/* ── Animations ─────────────────────────────────────────────── */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.5s ease forwards;
+}
+
+/* ── Focus visible ──────────────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* ── Scrollbar premium ──────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-surface);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gold-dark);
+}
