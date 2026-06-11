@@ -76,7 +76,7 @@ export function buildMetadata({
 export const pageMetadata = {
 
   home: buildMetadata({
-    title: "Londrina Executivo | Mobilidade Premium",
+    title: "Transporte Executivo em Londrina | Transfer, Motorista e Empresas",
     description:
       "Serviço de mobilidade executiva em Londrina. Transfer para aeroportos, " +
       "rotas interestaduais, motorista executivo e transporte corporativo premium.",
