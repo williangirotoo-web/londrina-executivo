@@ -35,7 +35,7 @@ export const business = {
   themeColor:        "#C9A84C",
   locale:            "pt_BR",
   // Verificações Search Console — preencher após DNS configurado
-  googleVerification: "PLACEHOLDER_GOOGLE_VERIFICATION",
+  googleVerification: "zA2Z2QjrMhzut4y4m3tgqCQ64A_5FtufyiBHtdW_tTU",
   bingVerification:   "PLACEHOLDER_BING_VERIFICATION",
   // IndexNow — gerar key única após publicação
   indexNowKey:        "PLACEHOLDER_INDEXNOW_KEY",
