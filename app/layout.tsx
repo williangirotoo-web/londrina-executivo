@@ -12,6 +12,7 @@
 
 import type { Metadata, Viewport } from "next"
 import { Inter } from "next/font/google"
+import Script from "next/script"
 import "./globals.css"
 import { business } from "@/lib/business"
 import {
@@ -94,6 +95,16 @@ export default function RootLayout({
         />
       </head>
       <body className="bg-[#0A0A0A] text-[#F0F0F0] antialiased">
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-VGJRW1MY4T"
+          strategy="afterInteractive"
+        />
+        <Script id="ga4-init" strategy="afterInteractive">{`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-VGJRW1MY4T');
+        `}</Script>
         {children}
       </body>
     </html>
