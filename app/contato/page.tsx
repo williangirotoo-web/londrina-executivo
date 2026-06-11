@@ -8,6 +8,7 @@
  */
 
 import type { Metadata } from "next"
+import Image from "next/image"
 import Link from "next/link"
 import { pageMetadata } from "@/lib/metadata"
 import { buildBreadcrumbSchema, serializeSchema } from "@/lib/schemas"
@@ -81,7 +82,19 @@ export default function ContatoPage() {
         </nav>
 
         {/* HERO */}
-        <section style={{ background: "linear-gradient(135deg, #0A0A0A 0%, #0d0d0d 100%)", padding: "6rem 1.5rem 5rem", position: "relative", overflow: "hidden" }}>
+        <section style={{ background: "#0A0A0A", padding: "6rem 1.5rem 5rem", position: "relative", overflow: "hidden" }}>
+          {/* Hero image */}
+          <div aria-hidden="true" style={{ position: "absolute", inset: 0, zIndex: 0 }}>
+            <Image
+              src="/fotos/t-cross-executivo.webp"
+              alt="Londrina Executivo — motorista recebendo passageiro com VW T-Cross"
+              fill
+              sizes="100vw"
+              style={{ objectFit: "cover", objectPosition: "center 30%" }}
+            />
+            <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to right, rgba(10,10,10,0.92) 0%, rgba(10,10,10,0.75) 50%, rgba(10,10,10,0.35) 100%)" }} />
+          </div>
+          <div aria-hidden="true" style={{ position: "absolute", inset: 0, zIndex: 1, backgroundImage: "radial-gradient(circle at 70% 50%,rgba(201,168,76,.04) 0%,transparent 60%)" }} />
           <div aria-hidden="true" style={{ position: "absolute", inset: 0, backgroundImage: "radial-gradient(circle at 60% 50%, rgba(201,168,76,0.04) 0%, transparent 60%)" }} />
           <div style={{ maxWidth: "72rem", margin: "0 auto", position: "relative", zIndex: 1, textAlign: "center" }}>
             <div style={{ width: "48px", height: "1px", background: "#C9A84C", margin: "0 auto 1.5rem" }} />

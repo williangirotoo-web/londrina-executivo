@@ -5,6 +5,7 @@
  */
 
 import type { Metadata } from "next"
+import Image from "next/image"
 import Link from "next/link"
 import { pageMetadata } from "@/lib/metadata"
 import { buildServiceSchema, buildFAQSchema, buildBreadcrumbSchema, serializeSchema } from "@/lib/schemas"
@@ -100,9 +101,22 @@ export default function AirportTransferLondrinaPage() {
           </div>
         </nav>
 
-        <section style={{ background: "linear-gradient(135deg,#0A0A0A,#0d0d18)", padding: "6rem 1.5rem 5rem", position: "relative", overflow: "hidden" }}>
+        <section style={{ background: "#0A0A0A", padding: "6rem 1.5rem 5rem", position: "relative", overflow: "hidden" }}>
+          {/* Hero image */}
+          <div aria-hidden="true" style={{ position: "absolute", inset: 0, zIndex: 0 }}>
+            <Image
+              src="/fotos/airport-transfer-executivo.webp"
+              alt="Serviço de transfer executivo para aeroportos em Londrina"
+              priority
+              fill
+              sizes="100vw"
+              style={{ objectFit: "cover", objectPosition: "center 30%" }}
+            />
+            <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to right, rgba(10,10,10,0.92) 0%, rgba(10,10,10,0.75) 50%, rgba(10,10,10,0.35) 100%)" }} />
+          </div>
+          <div aria-hidden="true" style={{ position: "absolute", inset: 0, zIndex: 1, backgroundImage: "radial-gradient(circle at 70% 50%,rgba(201,168,76,.04) 0%,transparent 60%)" }} />
           <div aria-hidden="true" style={{ position: "absolute", inset: 0, backgroundImage: "radial-gradient(circle at 70% 50%,rgba(201,168,76,.05) 0%,transparent 60%)" }} />
-          <div style={{ maxWidth: "72rem", margin: "0 auto", position: "relative", zIndex: 1 }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", position: "relative", zIndex: 2 }}>
             <div style={{ maxWidth: "660px" }}>
               <div style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "rgba(201,168,76,.1)", border: "1px solid rgba(201,168,76,.25)", borderRadius: "999px", padding: "5px 16px", marginBottom: "1.75rem" }}>
                 <span style={{ color: "#C9A84C", fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase" }}>✈️ Airport Transfer · Londrina LDB · Executive Service</span>
