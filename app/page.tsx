@@ -156,8 +156,8 @@ export default function HomePage() {
           {/* Hero image — priority load, above the fold */}
           <div aria-hidden="true" style={{ position: "absolute", inset: 0, zIndex: 0 }}>
             <Image
-              src="/fotos/hero-transfer-executivo.webp"
-              alt="Transporte executivo premium em Londrina"
+              src="/fotos/hero-transporte-executivo.webp"
+              alt="Transporte executivo premium em Londrina — Toyota Corolla Cross com motorista"
               fill
               priority
               sizes="100vw"
@@ -368,7 +368,7 @@ export default function HomePage() {
                   passageiros: "Até 4 passageiros",
                   ideal: "Transfer GRU · Transfer SP · Motorista executivo",
                   specs: ["Automático", "Climatizado", "Espaço para bagagem despachada"],
-                  src: "/fotos/frota-corolla-cross.webp",
+                  src: "/fotos/corolla-cross-executivo.webp",
                   alt: "Toyota Corolla Cross utilizado para transporte executivo em Londrina",
                 },
                 {
@@ -377,7 +377,7 @@ export default function HomePage() {
                   passageiros: "Até 4 passageiros",
                   ideal: "Transfer corporativo · Agenda executiva · Viagens longas",
                   specs: ["4x4 disponível", "Alto padrão de conforto", "Ideal para viagens interestaduais"],
-                  src: "/fotos/frota-jeep-compass.webp",
+                  src: "/fotos/jeep-compass-executivo.webp",
                   alt: "Jeep Compass para transfer executivo e viagens corporativas",
                 },
                 {
@@ -386,7 +386,7 @@ export default function HomePage() {
                   passageiros: "Até 4 passageiros",
                   ideal: "Deslocamentos locais · Airport transfer LDB · Agenda corporativa",
                   specs: ["Compacto e ágil", "Climatizado", "Conforto executivo"],
-                  src: "/fotos/frota-t-cross.webp",
+                  src: "/fotos/t-cross-executivo.webp",
                   alt: "Volkswagen T-Cross para transporte executivo em Londrina",
                 },
                 {
@@ -395,7 +395,7 @@ export default function HomePage() {
                   passageiros: "Até 7 passageiros",
                   ideal: "Grupos corporativos · Equipes · Eventos · Feiras",
                   specs: ["Disponível sob consulta", "Ideal para grupos e eventos", "Nota fiscal disponível"],
-                  src: "/fotos/frota-van-executiva.webp",
+                  src: "/fotos/van-executiva-7-lugares.webp",
                   alt: "Van executiva para grupos e transporte corporativo",
                 },
               ].map((v) => (

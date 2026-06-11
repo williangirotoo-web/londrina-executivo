@@ -80,7 +80,7 @@ const veiculos = [
     ideal: ["Transfer GRU", "Transfer São Paulo", "Motorista executivo", "Viagens interestaduais"],
     destaque: true,
     slug: "corolla-cross",
-    src: "/fotos/frota-corolla-cross.webp",
+    src: "/fotos/corolla-cross-executivo.webp",
     alt: "Toyota Corolla Cross utilizado para transporte executivo em Londrina",
   },
   {
@@ -93,7 +93,7 @@ const veiculos = [
     ideal: ["Transfer corporativo", "Viagens longas", "Agenda executiva", "Alto conforto"],
     destaque: false,
     slug: "jeep-compass",
-    src: "/fotos/frota-jeep-compass.webp",
+    src: "/fotos/jeep-compass-executivo.webp",
     alt: "Jeep Compass para transfer executivo e viagens corporativas",
   },
   {
@@ -106,7 +106,7 @@ const veiculos = [
     ideal: ["Airport transfer LDB", "Deslocamentos locais", "Agenda corporativa", "Visitas comerciais"],
     destaque: false,
     slug: "t-cross",
-    src: "/fotos/frota-t-cross.webp",
+    src: "/fotos/t-cross-executivo.webp",
     alt: "Volkswagen T-Cross para transporte executivo em Londrina",
   },
   {
@@ -119,7 +119,7 @@ const veiculos = [
     ideal: ["Grupos corporativos", "Eventos e feiras", "Delegações", "Times comerciais"],
     destaque: false,
     slug: "van-executiva",
-    src: "/fotos/frota-van-executiva.webp",
+    src: "/fotos/van-executiva-7-lugares.webp",
     alt: "Van executiva para grupos e transporte corporativo",
   },
 ]

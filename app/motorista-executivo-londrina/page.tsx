@@ -100,7 +100,7 @@ export default function MotoristaExecutivoLondrinaPage() {
           {/* Imagem de fundo do hero */}
           <div aria-hidden="true" style={{ position: "absolute", inset: 0, zIndex: 0 }}>
             <Image
-              src="/fotos/motorista-executivo-servico.webp"
+              src="/fotos/motorista-executivo.webp"
               alt="Motorista executivo para atendimento corporativo em Londrina"
               fill
               priority
