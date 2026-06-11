@@ -5,6 +5,7 @@
  */
 
 import type { Metadata } from "next"
+import Image from "next/image"
 import Link from "next/link"
 import { pageMetadata } from "@/lib/metadata"
 import { buildServiceSchema, buildFAQSchema, buildBreadcrumbSchema, serializeSchema } from "@/lib/schemas"
@@ -79,6 +80,8 @@ const veiculos = [
     ideal: ["Transfer GRU", "Transfer São Paulo", "Motorista executivo", "Viagens interestaduais"],
     destaque: true,
     slug: "corolla-cross",
+    src: "/fotos/frota-corolla-cross.webp",
+    alt: "Toyota Corolla Cross utilizado para transporte executivo em Londrina",
   },
   {
     modelo: "Jeep Compass",
@@ -90,6 +93,8 @@ const veiculos = [
     ideal: ["Transfer corporativo", "Viagens longas", "Agenda executiva", "Alto conforto"],
     destaque: false,
     slug: "jeep-compass",
+    src: "/fotos/frota-jeep-compass.webp",
+    alt: "Jeep Compass para transfer executivo e viagens corporativas",
   },
   {
     modelo: "Volkswagen T-Cross",
@@ -101,6 +106,8 @@ const veiculos = [
     ideal: ["Airport transfer LDB", "Deslocamentos locais", "Agenda corporativa", "Visitas comerciais"],
     destaque: false,
     slug: "t-cross",
+    src: "/fotos/frota-t-cross.webp",
+    alt: "Volkswagen T-Cross para transporte executivo em Londrina",
   },
   {
     modelo: "Vans Executivas",
@@ -112,6 +119,8 @@ const veiculos = [
     ideal: ["Grupos corporativos", "Eventos e feiras", "Delegações", "Times comerciais"],
     destaque: false,
     slug: "van-executiva",
+    src: "/fotos/frota-van-executiva.webp",
+    alt: "Van executiva para grupos e transporte corporativo",
   },
 ]
 
@@ -212,24 +221,17 @@ export default function FrotaExecutivaLondrinaPage() {
 
                   {/* FOTO — estrutura pronta para imagem real */}
                   <div style={{
-                    background: "#111", height: "200px",
-                    display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center",
-                    borderBottom: "1px solid #2A2A2A", position: "relative",
+                    height: "200px", position: "relative", overflow: "hidden",
+                    borderBottom: "1px solid #2A2A2A",
                   }}>
-                    {/*
-                    SUBSTITUIR ESTE BLOCO pela imagem real quando disponível:
-                    <Image
-                      src={`/fotos/frota/${v.slug}.jpg`}
-                      alt={`${v.modelo} — frota executiva Londrina Executivo`}
+                      <Image
+                      src={v.src}
+                      alt={v.alt}
                       fill
-                      sizes="(max-width: 768px) 100vw, 33vw"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       style={{ objectFit: "cover", objectPosition: "center" }}
+                      loading="lazy"
                     />
-                    */}
-                    <span style={{ fontSize: "3rem", marginBottom: "0.5rem" }}>🚗</span>
-                    <span style={{ fontSize: "0.7rem", color: "#2A2A2A", fontWeight: 600, letterSpacing: "0.06em", textTransform: "uppercase" }}>
-                      Foto em breve
-                    </span>
                   </div>
 
                   {/* DADOS */}

@@ -7,6 +7,7 @@
  */
 
 import type { Metadata } from "next"
+import Image from "next/image"
 import Link from "next/link"
 import { pageMetadata } from "@/lib/metadata"
 import {
@@ -151,10 +152,21 @@ export default function HomePage() {
 
         {/* ════════ 1. HERO ════════ */}
         <section aria-label="Londrina Executivo — Transporte Executivo Premium"
-          style={{ background: "linear-gradient(135deg,#0A0A0A 0%,#141414 100%)", minHeight: "92vh", display: "flex", alignItems: "center", position: "relative", overflow: "hidden" }}>
-          <div aria-hidden="true" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "2px", background: "linear-gradient(to right,transparent,#C9A84C,transparent)" }} />
-          <div aria-hidden="true" style={{ position: "absolute", inset: 0, backgroundImage: "radial-gradient(circle at 80% 50%,rgba(201,168,76,.04) 0%,transparent 60%)" }} />
-          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "6rem 1.5rem", width: "100%", position: "relative", zIndex: 1 }}>
+          style={{ background: "#0A0A0A", minHeight: "92vh", display: "flex", alignItems: "center", position: "relative", overflow: "hidden" }}>
+          {/* Hero image — priority load, above the fold */}
+          <div aria-hidden="true" style={{ position: "absolute", inset: 0, zIndex: 0 }}>
+            <Image
+              src="/fotos/hero-transfer-executivo.webp"
+              alt="Transporte executivo premium em Londrina"
+              fill
+              priority
+              sizes="100vw"
+              style={{ objectFit: "cover", objectPosition: "center 30%" }}
+            />
+            <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to right, rgba(10,10,10,0.92) 0%, rgba(10,10,10,0.75) 50%, rgba(10,10,10,0.3) 100%)" }} />
+          </div>
+          <div aria-hidden="true" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "2px", background: "linear-gradient(to right,transparent,#C9A84C,transparent)", zIndex: 1 }} />
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "6rem 1.5rem", width: "100%", position: "relative", zIndex: 2 }}>
             <div style={{ maxWidth: "680px" }}>
               <div style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "rgba(201,168,76,.1)", border: "1px solid rgba(201,168,76,.25)", borderRadius: "999px", padding: "6px 18px", marginBottom: "2rem" }}>
                 <span style={{ width: "6px", height: "6px", borderRadius: "50%", background: "#C9A84C", flexShrink: 0 }} />
@@ -356,6 +368,8 @@ export default function HomePage() {
                   passageiros: "Até 4 passageiros",
                   ideal: "Transfer GRU · Transfer SP · Motorista executivo",
                   specs: ["Automático", "Climatizado", "Espaço para bagagem despachada"],
+                  src: "/fotos/frota-corolla-cross.webp",
+                  alt: "Toyota Corolla Cross utilizado para transporte executivo em Londrina",
                 },
                 {
                   modelo: "Jeep Compass",
@@ -363,6 +377,8 @@ export default function HomePage() {
                   passageiros: "Até 4 passageiros",
                   ideal: "Transfer corporativo · Agenda executiva · Viagens longas",
                   specs: ["4x4 disponível", "Alto padrão de conforto", "Ideal para viagens interestaduais"],
+                  src: "/fotos/frota-jeep-compass.webp",
+                  alt: "Jeep Compass para transfer executivo e viagens corporativas",
                 },
                 {
                   modelo: "Volkswagen T-Cross",
@@ -370,6 +386,8 @@ export default function HomePage() {
                   passageiros: "Até 4 passageiros",
                   ideal: "Deslocamentos locais · Airport transfer LDB · Agenda corporativa",
                   specs: ["Compacto e ágil", "Climatizado", "Conforto executivo"],
+                  src: "/fotos/frota-t-cross.webp",
+                  alt: "Volkswagen T-Cross para transporte executivo em Londrina",
                 },
                 {
                   modelo: "Vans Executivas",
@@ -377,6 +395,8 @@ export default function HomePage() {
                   passageiros: "Até 7 passageiros",
                   ideal: "Grupos corporativos · Equipes · Eventos · Feiras",
                   specs: ["Disponível sob consulta", "Ideal para grupos e eventos", "Nota fiscal disponível"],
+                  src: "/fotos/frota-van-executiva.webp",
+                  alt: "Van executiva para grupos e transporte corporativo",
                 },
               ].map((v) => (
                 <div key={v.modelo} style={{
@@ -384,23 +404,19 @@ export default function HomePage() {
                   border: "1px solid #2A2A2A",
                   display: "flex", flexDirection: "column",
                 }}>
-                  {/* Espaço para foto real */}
+                  {/* Imagem real do veículo — lazy load (below the fold) */}
                   <div style={{
-                    background: "#141414", height: "180px",
-                    display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center",
-                    borderBottom: "1px solid #2A2A2A", position: "relative",
+                    height: "180px", position: "relative", overflow: "hidden",
+                    borderBottom: "1px solid #2A2A2A",
                   }}>
-                    {/* SUBSTITUIR pelo componente abaixo quando tiver foto real:
                     <Image
-                      src={`/fotos/${v.modelo.toLowerCase().replace(/ /g,'-')}.jpg`}
-                      alt={`${v.modelo} — frota executiva Londrina Executivo`}
+                      src={v.src}
+                      alt={v.alt}
                       fill
-                      style={{ objectFit: "cover" }}
-                    /> */}
-                    <span style={{ fontSize: "2.5rem", marginBottom: "0.5rem" }}>🚗</span>
-                    <span style={{ fontSize: "0.7rem", color: "#2A2A2A", fontWeight: 600, letterSpacing: "0.06em", textTransform: "uppercase" }}>
-                      Foto em breve
-                    </span>
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                      style={{ objectFit: "cover", objectPosition: "center" }}
+                      loading="lazy"
+                    />
                   </div>
                   {/* Dados do veículo */}
                   <div style={{ padding: "1.25rem", flex: 1, display: "flex", flexDirection: "column" }}>
