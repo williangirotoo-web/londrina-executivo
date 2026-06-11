@@ -105,13 +105,13 @@ export default function TransferCorporativoLondrinaPage() {
 
         <section style={{ background: "#0A0A0A", padding: "6rem 1.5rem 5rem", position: "relative", overflow: "hidden" }}>
           {/* Hero image */}
-          <div aria-hidden="true" style={{ position: "absolute", inset: 0, zIndex: 0 }}>
+          <div aria-hidden="true" className="hero-image-wrapper" style={{ position: "absolute", top: 0, right: 0, width: "100%", height: "100%", zIndex: 0 }}>
             <Image
               src="/fotos/jeep-compass-executivo.webp"
               alt="Transfer corporativo Londrina — Jeep Compass executivo em prédio empresarial"
               priority
               fill
-              sizes="100vw"
+              sizes="(max-width: 768px) 0px, 100vw"
               style={{ objectFit: "cover", objectPosition: "center 30%" }}
             />
             <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to right, rgba(10,10,10,0.92) 0%, rgba(10,10,10,0.75) 50%, rgba(10,10,10,0.35) 100%)" }} />

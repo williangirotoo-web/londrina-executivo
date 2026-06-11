@@ -154,13 +154,13 @@ export default function HomePage() {
         <section aria-label="Londrina Executivo — Transporte Executivo Premium"
           style={{ background: "#0A0A0A", minHeight: "92vh", display: "flex", alignItems: "center", position: "relative", overflow: "hidden" }}>
           {/* Hero image — priority load, above the fold */}
-          <div aria-hidden="true" style={{ position: "absolute", inset: 0, zIndex: 0 }}>
+          <div aria-hidden="true" className="hero-image-wrapper" style={{ position: "absolute", top: 0, right: 0, width: "100%", height: "100%", zIndex: 0 }}>
             <Image
               src="/fotos/hero-transporte-executivo.webp"
               alt="Transporte executivo premium em Londrina — Toyota Corolla Cross com motorista"
               fill
               priority
-              sizes="100vw"
+              sizes="(max-width: 768px) 0px, 100vw"
               style={{ objectFit: "cover", objectPosition: "center 30%" }}
             />
             <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to right, rgba(10,10,10,0.92) 0%, rgba(10,10,10,0.75) 50%, rgba(10,10,10,0.3) 100%)" }} />

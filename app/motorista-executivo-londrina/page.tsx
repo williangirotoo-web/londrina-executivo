@@ -98,13 +98,13 @@ export default function MotoristaExecutivoLondrinaPage() {
 
         <section style={{ background: "#0A0A0A", padding: "6rem 1.5rem 5rem", position: "relative", overflow: "hidden" }}>
           {/* Imagem de fundo do hero */}
-          <div aria-hidden="true" style={{ position: "absolute", inset: 0, zIndex: 0 }}>
+          <div aria-hidden="true" className="hero-image-wrapper" style={{ position: "absolute", top: 0, right: 0, width: "100%", height: "100%", zIndex: 0 }}>
             <Image
               src="/fotos/motorista-executivo.webp"
               alt="Motorista executivo para atendimento corporativo em Londrina"
               fill
               priority
-              sizes="100vw"
+              sizes="(max-width: 768px) 0px, 100vw"
               style={{ objectFit: "cover", objectPosition: "center 30%" }}
             />
             <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to right, rgba(10,10,10,0.95) 0%, rgba(10,10,10,0.85) 55%, rgba(10,10,10,0.4) 100%)" }} />
