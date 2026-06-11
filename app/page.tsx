@@ -328,6 +328,111 @@ export default function HomePage() {
           </div>
         </section>
 
+
+        {/* ════════ 5b. FROTA ════════ */}
+        <section aria-labelledby="frota-heading" style={{ background: "#141414", padding: "5rem 1.5rem" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto" }}>
+            <div style={{ display: "flex", alignItems: "flex-end", justifyContent: "space-between", flexWrap: "wrap", gap: "1rem", marginBottom: "3rem" }}>
+              <div>
+                <div style={{ width: "48px", height: "1px", background: "#C9A84C", marginBottom: "1.5rem" }} />
+                <h2 id="frota-heading" style={{ fontSize: "clamp(1.5rem,3vw,2rem)", fontWeight: 800, color: "#F0F0F0", marginBottom: "0.75rem" }}>
+                  Nossa Frota Executiva
+                </h2>
+                <p style={{ color: "#6B6B6B", maxWidth: "480px" }}>
+                  Veículos premium revisados e climatizados para cada tipo de deslocamento.
+                </p>
+              </div>
+              <Link href="/frota-executiva-londrina"
+                style={{ color: "#C9A84C", fontSize: "0.875rem", fontWeight: 600, textDecoration: "none", whiteSpace: "nowrap" }}>
+                Ver frota completa →
+              </Link>
+            </div>
+
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(280px,1fr))", gap: "1.25rem" }}>
+              {[
+                {
+                  modelo: "Toyota Corolla Cross",
+                  categoria: "Sedan Executivo Premium",
+                  passageiros: "Até 4 passageiros",
+                  ideal: "Transfer GRU · Transfer SP · Motorista executivo",
+                  specs: ["Automático", "Climatizado", "Espaço para bagagem despachada"],
+                },
+                {
+                  modelo: "Jeep Compass",
+                  categoria: "SUV Executivo",
+                  passageiros: "Até 4 passageiros",
+                  ideal: "Transfer corporativo · Agenda executiva · Viagens longas",
+                  specs: ["4x4 disponível", "Alto padrão de conforto", "Ideal para viagens interestaduais"],
+                },
+                {
+                  modelo: "Volkswagen T-Cross",
+                  categoria: "SUV Compacto Executivo",
+                  passageiros: "Até 4 passageiros",
+                  ideal: "Deslocamentos locais · Airport transfer LDB · Agenda corporativa",
+                  specs: ["Compacto e ágil", "Climatizado", "Conforto executivo"],
+                },
+                {
+                  modelo: "Vans Executivas",
+                  categoria: "Transporte para Grupos",
+                  passageiros: "Até 7 passageiros",
+                  ideal: "Grupos corporativos · Equipes · Eventos · Feiras",
+                  specs: ["Disponível sob consulta", "Ideal para grupos e eventos", "Nota fiscal disponível"],
+                },
+              ].map((v) => (
+                <div key={v.modelo} style={{
+                  background: "#1C1C1C", borderRadius: "10px", overflow: "hidden",
+                  border: "1px solid #2A2A2A",
+                  display: "flex", flexDirection: "column",
+                }}>
+                  {/* Espaço para foto real */}
+                  <div style={{
+                    background: "#141414", height: "180px",
+                    display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center",
+                    borderBottom: "1px solid #2A2A2A", position: "relative",
+                  }}>
+                    {/* SUBSTITUIR pelo componente abaixo quando tiver foto real:
+                    <Image
+                      src={`/fotos/${v.modelo.toLowerCase().replace(/ /g,'-')}.jpg`}
+                      alt={`${v.modelo} — frota executiva Londrina Executivo`}
+                      fill
+                      style={{ objectFit: "cover" }}
+                    /> */}
+                    <span style={{ fontSize: "2.5rem", marginBottom: "0.5rem" }}>🚗</span>
+                    <span style={{ fontSize: "0.7rem", color: "#2A2A2A", fontWeight: 600, letterSpacing: "0.06em", textTransform: "uppercase" }}>
+                      Foto em breve
+                    </span>
+                  </div>
+                  {/* Dados do veículo */}
+                  <div style={{ padding: "1.25rem", flex: 1, display: "flex", flexDirection: "column" }}>
+                    <p style={{ fontWeight: 800, fontSize: "1rem", color: "#F0F0F0", marginBottom: "0.2rem" }}>{v.modelo}</p>
+                    <p style={{ fontSize: "0.75rem", color: "#C9A84C", fontWeight: 600, marginBottom: "0.75rem" }}>{v.categoria}</p>
+                    <p style={{ fontSize: "0.8rem", color: "#6B6B6B", marginBottom: "0.75rem", display: "flex", alignItems: "center", gap: "6px" }}>
+                      <span>👥</span> {v.passageiros}
+                    </p>
+                    <div style={{ display: "flex", flexDirection: "column", gap: "0.3rem", marginBottom: "1rem", flex: 1 }}>
+                      {v.specs.map(s => (
+                        <span key={s} style={{ fontSize: "0.775rem", color: "#6B6B6B", display: "flex", alignItems: "center", gap: "5px" }}>
+                          <span style={{ color: "#C9A84C", flexShrink: 0 }}>✓</span> {s}
+                        </span>
+                      ))}
+                    </div>
+                    <p style={{ fontSize: "0.775rem", color: "#A8A8A8", borderTop: "1px solid #2A2A2A", paddingTop: "0.75rem", marginTop: "auto", fontStyle: "italic" }}>
+                      Ideal: {v.ideal}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div style={{ textAlign: "center", marginTop: "2.5rem" }}>
+              <Link href="/frota-executiva-londrina"
+                style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "transparent", color: "#C9A84C", fontWeight: 700, fontSize: "0.9rem", padding: "0.75rem 1.75rem", borderRadius: "6px", border: "1.5px solid rgba(201,168,76,.4)", textDecoration: "none" }}>
+                Ver especificações completas da frota →
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* ════════ 6. SERVIÇOS ════════ */}
         <section aria-labelledby="servicos-heading" style={{ background: "#141414", padding: "5rem 1.5rem" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto" }}>

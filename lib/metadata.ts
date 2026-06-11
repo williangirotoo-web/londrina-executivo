@@ -155,4 +155,15 @@ export const pageMetadata = {
     ogImageAlt: "Contato Londrina Executivo — solicitar orçamento",
   }),
 
+  frotaExecutiva: buildMetadata({
+    title: "Frota Executiva Londrina | Corolla Cross · Compass · T-Cross",
+    description:
+      "Conheça a frota executiva da Londrina Executivo. " +
+      "Corolla Cross, Jeep Compass e VW T-Cross. " +
+      "Veículos premium para transfer e transporte corporativo em Londrina.",
+    path: "/frota-executiva-londrina",
+    ogImage: "og-frota-executiva.jpg",
+    ogImageAlt: "Frota Executiva Londrina — Corolla Cross, Jeep Compass e VW T-Cross",
+  }),
+
 } as const

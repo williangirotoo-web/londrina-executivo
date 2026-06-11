@@ -17,6 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: url("/airport-transfer-londrina"),                 lastModified: BUILD_DATE, changeFrequency: "monthly" as const, priority: 0.9  },
     { url: url("/motorista-executivo-londrina"),              lastModified: BUILD_DATE, changeFrequency: "monthly" as const, priority: 0.85 },
     { url: url("/transfer-corporativo-londrina"),             lastModified: BUILD_DATE, changeFrequency: "monthly" as const, priority: 0.85 },
+    { url: url("/frota-executiva-londrina"),             lastModified: BUILD_DATE, changeFrequency: "monthly" as const, priority: 0.8  },
     { url: url("/contato"),                                   lastModified: BUILD_DATE, changeFrequency: "monthly" as const, priority: 0.7  },
   ]
 }
