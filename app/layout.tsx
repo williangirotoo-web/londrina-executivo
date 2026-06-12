@@ -15,6 +15,7 @@ import { Inter } from "next/font/google"
 import Script from "next/script"
 import "./globals.css"
 import { business } from "@/lib/business"
+import Header from "./components/Header"
 import {
   buildLocalBusinessSchema,
   buildWebSiteSchema,
@@ -105,6 +106,7 @@ export default function RootLayout({
           gtag('js', new Date());
           gtag('config', 'G-VGJRW1MY4T');
         `}</Script>
+        <Header />
         {children}
       </body>
     </html>
