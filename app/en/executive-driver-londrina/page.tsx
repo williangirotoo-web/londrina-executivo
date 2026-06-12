@@ -146,7 +146,7 @@ export default function EnDriverPage() {
       <footer style={{ background: "#0A0A0A", borderTop: "1px solid #1C1C1C", padding: "2rem 1.5rem" }}>
         <div style={{ maxWidth: "72rem", margin: "0 auto", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "1rem" }}>
           <p style={{ color: "#C9A84C", fontWeight: 800, fontFamily: "Georgia,serif", margin: 0 }}>Londrina Executivo</p>
-          <p style={{ color: "#6B6B6B", fontSize: "0.8rem", margin: 0 }}>Executive Driver · Londrina, PR, Brazil · <a href={`tel:${business.phone}`} style={{ , textDecoration: "none" }}>{business.phoneDisplay}</a></p>
+          <p style={{ color: "#6B6B6B", fontSize: "0.8rem", margin: 0 }}>Executive Driver · Londrina, PR, Brazil · <a href={`tel:${business.phone}`} style={{ color: "#C9A84C", textDecoration: "none" }}>{business.phoneDisplay}</a></p>
         </div>
       </footer>
     </main>
