@@ -45,7 +45,7 @@ export default function EnAirportPage() {
       </div>
 
       <section style={{ background: "linear-gradient(135deg,#0A0A0A,#141414)", padding: "6rem 1.5rem 5rem" }}>
-        <div style={{ maxWidth: "72rem", margin: "0 auto", maxWidth: "680px" }}>
+        <div style={{ maxWidth: "680px", margin: "0 auto" }}>
           <div style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "rgba(201,168,76,.1)", border: "1px solid rgba(201,168,76,.25)", borderRadius: "999px", padding: "5px 16px", marginBottom: "1.75rem" }}>
             <span style={{ color: "#C9A84C", fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase" }}>✈️ Airport Transfer · Londrina LDB · Executive Service</span>
           </div>
@@ -154,7 +154,7 @@ export default function EnAirportPage() {
       <footer style={{ background: "#0A0A0A", borderTop: "1px solid #1C1C1C", padding: "2rem 1.5rem" }}>
         <div style={{ maxWidth: "72rem", margin: "0 auto", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "1rem" }}>
           <p style={{ color: "#C9A84C", fontWeight: 800, fontFamily: "Georgia,serif", margin: 0 }}>Londrina Executivo</p>
-          <p style={{ color: "#6B6B6B", fontSize: "0.8rem", margin: 0 }}>Airport Transfer · Londrina, PR, Brazil · <a href={`tel:${business.phone}`} style={{ color: "#C9A84C", textDecoration: "none" }}>{business.phoneDisplay}</a></p>
+          <p style={{ color: "#6B6B6B", fontSize: "0.8rem", margin: 0 }}>Airport Transfer · Londrina, PR, Brazil · <a href={`tel:${business.phone}`} style={{ , textDecoration: "none" }}>{business.phoneDisplay}</a></p>
         </div>
       </footer>
     </main>
