@@ -36,7 +36,7 @@ export const business = {
   locale:            "pt_BR",
   // Verificações Search Console — preencher após DNS configurado
   googleVerification: "zA2Z2QjrMhzut4y4m3tgqCQ64A_5FtufyiBHtdW_tTU",
-  bingVerification:   "PLACEHOLDER_BING_VERIFICATION",
+  bingVerification:   "8D142D6AD3EBD13FF8643D0276714A95",
   // IndexNow — gerar key única após publicação
   indexNowKey:        "PLACEHOLDER_INDEXNOW_KEY",
 } as const
