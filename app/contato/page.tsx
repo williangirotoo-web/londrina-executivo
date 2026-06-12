@@ -64,6 +64,47 @@ const canaisContato = [
   },
 ]
 
+
+const contatoFaqItems = [
+  {
+    question: "Qual o prazo de resposta para solicitações de orçamento?",
+    answer:
+      "Para solicitações enviadas pelo WhatsApp, respondemos em até 30 minutos durante o horário comercial. " +
+      "Para mensagens enviadas fora desse período, retornamos na manhã do dia útil seguinte. " +
+      "Em períodos de alta demanda, como vésperas de feriados, recomendamos solicitar com 24 horas de antecedência.",
+  },
+  {
+    question: "Atendem empresas com contrato mensal? Como funciona?",
+    answer:
+      "Sim. Para empresas com demanda regular de transporte executivo, elaboramos uma proposta de contrato mensal. " +
+      "A empresa designa um responsável pelo agendamento, que solicita as viagens via WhatsApp. " +
+      "Ao final do mês, enviamos o relatório de todas as viagens com nota fiscal centralizada.",
+  },
+  {
+    question: "Quais regiões são atendidas a partir de Londrina?",
+    answer:
+      "Atendemos Londrina e região metropolitana para deslocamentos locais. " +
+      "Para rotas interestaduais, as principais são: Londrina → São Paulo (450 km), " +
+      "Londrina → Aeroporto de Guarulhos (470 km) e Londrina → Curitiba (398 km). " +
+      "Para outros destinos, consulte disponibilidade.",
+  },
+  {
+    question: "É possível agendar com menos de 24 horas de antecedência?",
+    answer:
+      "Para corridas locais em Londrina e transfers no Aeroporto LDB, atendemos com prazos menores " +
+      "mediante disponibilidade — muitas vezes no mesmo dia. " +
+      "Para viagens interestaduais longas, recomendamos pelo menos 24 horas de antecedência " +
+      "para garantir disponibilidade do veículo e motorista.",
+  },
+  {
+    question: "Como é emitida a nota fiscal?",
+    answer:
+      "A nota fiscal é emitida para o CPF ou CNPJ informado no agendamento e enviada por e-mail ou WhatsApp. " +
+      "Para corridas avulsas, o prazo é de até dois dias úteis após a viagem. " +
+      "Para contratos mensais, a nota fiscal é emitida junto ao relatório no início do mês seguinte.",
+  },
+]
+
 export default function ContatoPage() {
   return (
     <>

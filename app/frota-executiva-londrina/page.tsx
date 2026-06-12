@@ -58,6 +58,24 @@ const faqItems = [
       "disponibilizamos vans executivas com capacidade para até 7 passageiros. " +
       "Ideal para feiras, convenções e visitas de clientes que chegam em grupo.",
   },
+  {
+    question: "Com que frequência os veículos são revisados e higienizados?",
+    answer:
+      "Todos os veículos da frota seguem calendário de revisão preventiva regular, " +
+      "conforme as recomendações do fabricante. " +
+      "A higienização interna — aspiração, limpeza de estofados e aromatização — " +
+      "é realizada antes de cada atendimento. " +
+      "Para viagens de longa distância, o veículo é preparado com antecedência.",
+  },
+  {
+    question: "Como é o conforto dos veículos para viagens de 5 a 6 horas?",
+    answer:
+      "Os veículos da frota são equipados com ar-condicionado automático de dupla zona, " +
+      "bancos reclináveis com apoio lombar, " +
+      "e espaço interno adequado para passageiros de qualquer porte. " +
+      "Para viagens longas como Londrina-Guarulhos (470 km), " +
+      "o Jeep Compass e o Corolla Cross são os modelos mais indicados pelo espaço interno superior.",
+  },
 ]
 
 const breadcrumbSchema = buildBreadcrumbSchema([
@@ -287,6 +305,77 @@ export default function FrotaExecutivaLondrinaPage() {
         </section>
 
         {/* ROTAS RECOMENDADAS */}
+
+        {/* ════════ ESPECIFICAÇÕES E PADRÃO ════════ */}
+        <section aria-labelledby="specs-heading" style={{ background: "#0A0A0A", padding: "5rem 1.5rem" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto" }}>
+            <div style={{ width: "48px", height: "1px", background: "#C9A84C", marginBottom: "1.5rem" }} />
+            <h2 id="specs-heading" style={{ fontSize: "clamp(1.375rem,2.8vw,1.875rem)", fontWeight: 800, color: "#F0F0F0", marginBottom: "1rem" }}>
+              Padrão de qualidade e manutenção da frota
+            </h2>
+            <p style={{ color: "#6B6B6B", marginBottom: "2.5rem", maxWidth: "600px" }}>
+              Cada veículo segue um protocolo rígido antes de cada atendimento.
+            </p>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(260px,1fr))", gap: "1.5rem", maxWidth: "900px" }}>
+              {[
+                { icon: "🔧", titulo: "Manutenção preventiva regular", desc: "Revisão mecânica conforme calendário do fabricante. Troca de óleo, filtros, pneus e freios em dia. Nenhum veículo opera com pendência mecânica." },
+                { icon: "🧹", titulo: "Higienização antes de cada viagem", desc: "Aspiração completa, limpeza de estofados, sanitização de superfícies e aromatização. O interior do veículo está sempre pronto para receber um passageiro exigente." },
+                { icon: "❄️", titulo: "Climatização dual zone", desc: "Ar-condicionado automático de dupla zona nos modelos principais. O passageiro ajusta a temperatura sem interferir no controle do motorista." },
+                { icon: "🧳", titulo: "Espaço para bagagem de viagem", desc: "Porta-malas compatível com malas de despacho para voos internacionais. Para múltiplas malas, informe no agendamento para confirmarmos o veículo mais adequado." },
+                { icon: "🔇", titulo: "Conforto acústico para trabalho e descanso", desc: "Veículos com isolamento acústico adequado para chamadas de negócios e descanso durante a viagem. Nenhum barulho de motor ou rodagem compromete a concentração." },
+                { icon: "📱", titulo: "Carregadores USB disponíveis", desc: "Tomadas e entradas USB para carregamento de dispositivos durante o trajeto. Essencial para executivos que trabalham ou se preparam para reuniões no caminho." },
+              ].map(item => (
+                <div key={item.titulo} style={{ display: "flex", gap: "1rem", alignItems: "flex-start" }}>
+                  <div style={{ width: "44px", height: "44px", borderRadius: "8px", background: "rgba(201,168,76,.1)", border: "1px solid rgba(201,168,76,.2)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1.25rem", flexShrink: 0 }}>{item.icon}</div>
+                  <div>
+                    <h3 style={{ fontWeight: 700, fontSize: "0.875rem", color: "#F0F0F0", marginBottom: "0.3rem" }}>{item.titulo}</h3>
+                    <p style={{ color: "#6B6B6B", fontSize: "0.825rem", lineHeight: 1.65, margin: 0 }}>{item.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ════════ FROTA CORPORATIVA ════════ */}
+        <section aria-labelledby="frota-corp-heading" style={{ background: "#141414", padding: "5rem 1.5rem" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto" }}>
+            <div style={{ width: "48px", height: "1px", background: "#C9A84C", marginBottom: "1.5rem" }} />
+            <h2 id="frota-corp-heading" style={{ fontSize: "clamp(1.375rem,2.8vw,1.875rem)", fontWeight: 800, color: "#F0F0F0", marginBottom: "1.5rem" }}>
+              Frota para atendimento corporativo
+            </h2>
+            <div style={{ maxWidth: "780px" }}>
+              <p style={{ color: "#A8A8A8", fontSize: "0.95rem", lineHeight: 1.8, marginBottom: "1.25rem" }}>
+                Empresas que contratam o serviço em regime de contrato mensal têm a garantia de atendimento
+                prioritário com veículo adequado a cada tipo de demanda. Para visitantes individuais e executivos
+                em viagem solo, os sedans e SUVs executivos oferecem conforto e espaço para bagagem.
+                Para equipes e delegações, as vans executivas eliminam a necessidade de múltiplos veículos.
+              </p>
+              <p style={{ color: "#A8A8A8", fontSize: "0.95rem", lineHeight: 1.8, marginBottom: "1.25rem" }}>
+                A diversidade da frota também permite atender diferentes perfis dentro da mesma empresa:
+                o CEO pode utilizar o Jeep Compass para uma viagem a São Paulo enquanto a equipe comercial
+                usa a van para uma feira em Guarulhos — tudo dentro do mesmo contrato corporativo,
+                com nota fiscal e relatório unificado.
+              </p>
+
+            <p style={{ color: "#A8A8A8", fontSize: "0.95rem", lineHeight: 1.8 }}>
+              Para viagens regulares entre Londrina e São Paulo ou Guarulhos, a escolha do veículo correto
+              faz diferença real no conforto da chegada. O Toyota Corolla Cross tem banco traseiro com
+              apoio de cabeça ajustável e espaço de pernas adequado para adultos de qualquer estatura.
+              O Jeep Compass adiciona altura interna maior, facilitando o embarque com malas grandes
+              e oferecendo sensação de espaço superior em percursos de mais de cinco horas.
+              Ambos os modelos têm porta-malas com capacidade para duas a três malas de despacho
+              mais uma mochila ou bolsa de cabine.
+            </p>
+              <p style={{ color: "#A8A8A8", fontSize: "0.95rem", lineHeight: 1.8 }}>
+                Para viagens longas de cinco a seis horas, a frota é preparada com maior antecedência —
+                verificação mecânica, higienização completa e abastecimento antes da saída.
+                O objetivo é que o passageiro chegue ao destino tão descansado quanto possível.
+              </p>
+            </div>
+          </div>
+        </section>
+
         <section aria-labelledby="rotas-frota-heading" style={{ background: "#0A0A0A", padding: "5rem 1.5rem" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto" }}>
             <div style={{ width: "48px", height: "1px", background: "#C9A84C", marginBottom: "1.5rem" }} />
