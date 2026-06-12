@@ -771,6 +771,22 @@ export default function HomePage() {
                 </div>
               </div>
             </div>
+
+              {/* ── Outras soluções de mobilidade ── */}
+              <div style={{ gridColumn: "1 / -1", borderTop: "1px solid #1C1C1C", paddingTop: "1.5rem", marginTop: "0.5rem" }}>
+                <p style={{ color: "#6B6B6B", fontSize: "0.75rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.08em", marginBottom: "0.5rem" }}>
+                  Outras soluções de mobilidade
+                </p>
+                <p style={{ color: "#6B6B6B", fontSize: "0.8rem", lineHeight: 1.6, marginBottom: "0.75rem", maxWidth: "480px" }}>
+                  Para deslocamentos urbanos, corridas locais e atendimento de táxi executivo em Londrina, conheça nossa operação complementar.
+                </p>
+                <a
+                  href="https://londrinataxi.com.br"
+                  rel="noopener"
+                  style={{ color: "#C9A84C", fontSize: "0.8rem", fontWeight: 600, textDecoration: "none" }}>
+                  Conhecer Londrina Táxi →
+                </a>
+              </div>
             <div style={{ borderTop: "1px solid #1C1C1C", paddingTop: "1.5rem", display: "flex", flexWrap: "wrap", gap: "1rem", justifyContent: "space-between", alignItems: "center" }}>
               <p style={{ fontSize: "0.8rem", color: "#6B6B6B" }}>
                 © {new Date().getFullYear()} Londrina Executivo · Londrina, PR
