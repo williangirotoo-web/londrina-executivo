@@ -72,6 +72,22 @@ const faqItems = [
       "O veículo está em perfeito estado de conservação e higiene, " +
       "adequado para passageiros com malas de viagem internacional.",
   },
+  {
+    question: "Vocês emitem nota fiscal para o transfer Londrina Guarulhos?",
+    answer:
+      "Sim. Emitimos nota fiscal para pessoas físicas e jurídicas. " +
+      "Para empresas que utilizam o transfer com frequência — como exportadoras e cooperativas " +
+      "que embarcam executivos regularmente — oferecemos faturamento mensal centralizado " +
+      "com relatório de todas as viagens do período.",
+  },
+  {
+    question: "É possível contratar o transfer para grupos ou delegações?",
+    answer:
+      "Sim. Para grupos de até sete pessoas, contamos com vans executivas. " +
+      "Equipes comerciais, delegações e grupos de colaboradores que viajam juntos " +
+      "podem utilizar um único veículo, com o mesmo padrão de motorista uniformizado " +
+      "e monitoramento de voo.",
+  },
 ]
 
 const breadcrumbSchema = buildBreadcrumbSchema([
@@ -244,6 +260,204 @@ export default function LondrinaGuarulhosPage() {
         </section>
 
         {/* FAQ */}
+
+        {/* ════════ ROTA E DISTÂNCIA ════════ */}
+        <section aria-labelledby="rota-dist-heading" style={{ background: "#0A0A0A", padding: "5rem 1.5rem" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto" }}>
+            <div style={{ width: "48px", height: "1px", background: "#C9A84C", marginBottom: "1.5rem" }} />
+            <h2 id="rota-dist-heading" style={{ fontSize: "clamp(1.375rem,2.8vw,1.875rem)", fontWeight: 800, color: "#F0F0F0", marginBottom: "1.5rem" }}>
+              Distância e rota utilizada
+            </h2>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(300px,1fr))", gap: "2rem", maxWidth: "900px" }}>
+              <div>
+                <p style={{ color: "#A8A8A8", fontSize: "0.95rem", lineHeight: 1.8, marginBottom: "1.25rem" }}>
+                  O percurso de Londrina ao Aeroporto Internacional de Guarulhos cobre <strong style={{ color: "#F0F0F0" }}>470 quilômetros</strong>,
+                  com tempo médio de cinco horas e meia em condições normais de tráfego.
+                  A rota principal segue pela BR-369 a partir de Londrina até a divisa com São Paulo,
+                  passando por Ourinhos, e entra na Rodovia dos Bandeirantes (SP-348) para o trecho final até o aeroporto.
+                </p>
+                <p style={{ color: "#A8A8A8", fontSize: "0.95rem", lineHeight: 1.8 }}>
+                  A Rodovia dos Bandeirantes é classificada como uma das mais seguras do Brasil para viagens de longa
+                  distância, com manutenção regular e boa sinalização. Em datas de alta demanda — como vésperas de feriados
+                  prolongados — recomendamos sair de Londrina com uma hora de antecedência adicional.
+                </p>
+              </div>
+              <div>
+                <p style={{ color: "#A8A8A8", fontSize: "0.95rem", lineHeight: 1.8, marginBottom: "1.25rem" }}>
+                  <strong style={{ color: "#C9A84C" }}>Pedágios:</strong> a rota inclui pedágios na Rodovia dos Bandeirantes e trechos
+                  da SP-330. O valor dos pedágios é incluso no orçamento informado no momento do agendamento —
+                  sem cobranças extras ou surpresas no final da viagem.
+                </p>
+                <p style={{ color: "#A8A8A8", fontSize: "0.95rem", lineHeight: 1.8 }}>
+                  Para voos com embarque antecipado — como voos internacionais que exigem check-in três horas antes —
+                  calculamos o horário de saída de Londrina de forma a garantir a chegada ao aeroporto com
+                  folga suficiente para despacho de bagagem e controle de passaporte.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ════════ TERMINAIS ════════ */}
+        <section aria-labelledby="terminais-heading" style={{ background: "#141414", padding: "5rem 1.5rem" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto" }}>
+            <div style={{ width: "48px", height: "1px", background: "#C9A84C", marginBottom: "1.5rem" }} />
+            <h2 id="terminais-heading" style={{ fontSize: "clamp(1.375rem,2.8vw,1.875rem)", fontWeight: 800, color: "#F0F0F0", marginBottom: "1rem" }}>
+              Embarque nos terminais de Guarulhos
+            </h2>
+            <p style={{ color: "#6B6B6B", marginBottom: "2.5rem", maxWidth: "600px" }}>
+              O Aeroporto Internacional de Guarulhos opera com três terminais distintos. Informe o seu no agendamento.
+            </p>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(260px,1fr))", gap: "1.25rem", maxWidth: "900px" }}>
+              <div style={{ background: "#1C1C1C", borderRadius: "10px", padding: "1.5rem", border: "1px solid #2A2A2A", borderTop: "3px solid #2563eb" }}>
+                <span style={{ background: "#2563eb", color: "#fff", fontWeight: 800, fontSize: "0.8rem", padding: "3px 10px", borderRadius: "4px", display: "inline-block", marginBottom: "0.75rem" }}>T1</span>
+                <h3 style={{ fontWeight: 700, fontSize: "0.95rem", color: "#F0F0F0", marginBottom: "0.5rem" }}>Terminal 1</h3>
+                <p style={{ color: "#6B6B6B", fontSize: "0.875rem", lineHeight: 1.65, margin: 0 }}>
+                  Operado principalmente pela Latam para voos domésticos. Localizado na entrada leste do complexo aeroportuário.
+                  Para chegadas, o motorista aguarda no saguão de desembarque com placa personalizada.
+                </p>
+              </div>
+              <div style={{ background: "#1C1C1C", borderRadius: "10px", padding: "1.5rem", border: "1px solid #2A2A2A", borderTop: "3px solid #16a34a" }}>
+                <span style={{ background: "#16a34a", color: "#fff", fontWeight: 800, fontSize: "0.8rem", padding: "3px 10px", borderRadius: "4px", display: "inline-block", marginBottom: "0.75rem" }}>T2</span>
+                <h3 style={{ fontWeight: 700, fontSize: "0.95rem", color: "#F0F0F0", marginBottom: "0.5rem" }}>Terminal 2</h3>
+                <p style={{ color: "#6B6B6B", fontSize: "0.875rem", lineHeight: 1.65, margin: 0 }}>
+                  Utilizado pela Gol e Azul para voos domésticos. Conectado ao T3 por passarela interna.
+                  Ideal para passageiros com conexão nacional antes de voos internacionais no T3.
+                </p>
+              </div>
+              <div style={{ background: "#1C1C1C", borderRadius: "10px", padding: "1.5rem", border: "1px solid #2A2A2A", borderTop: "3px solid #7c3aed" }}>
+                <span style={{ background: "#7c3aed", color: "#fff", fontWeight: 800, fontSize: "0.8rem", padding: "3px 10px", borderRadius: "4px", display: "inline-block", marginBottom: "0.75rem" }}>T3</span>
+                <h3 style={{ fontWeight: 700, fontSize: "0.95rem", color: "#F0F0F0", marginBottom: "0.5rem" }}>Terminal 3</h3>
+                <p style={{ color: "#6B6B6B", fontSize: "0.875rem", lineHeight: 1.65, margin: 0 }}>
+                  Terminal internacional, operado por todas as companhias aéreas em voos para destinos fora do Brasil.
+                  Para executivos em viagens internacionais, recomendamos saída de Londrina com oito horas de antecedência.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ════════ MONITORAMENTO E INTERNACIONAL ════════ */}
+        <section aria-labelledby="monitor-heading" style={{ background: "#0A0A0A", padding: "5rem 1.5rem" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto" }}>
+            <div style={{ width: "48px", height: "1px", background: "#C9A84C", marginBottom: "1.5rem" }} />
+            <h2 id="monitor-heading" style={{ fontSize: "clamp(1.375rem,2.8vw,1.875rem)", fontWeight: 800, color: "#F0F0F0", marginBottom: "1.5rem" }}>
+              Monitoramento de voos e viagens internacionais
+            </h2>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(340px,1fr))", gap: "2rem", maxWidth: "900px" }}>
+              <div>
+                <h3 style={{ fontWeight: 700, fontSize: "1rem", color: "#C9A84C", marginBottom: "0.75rem" }}>Monitoramento em tempo real</h3>
+                <p style={{ color: "#A8A8A8", fontSize: "0.95rem", lineHeight: 1.8, marginBottom: "1rem" }}>
+                  Ao agendar o transfer, informamos o número do voo. Nossa equipe acompanha o status do voo
+                  até o embarque — em caso de atraso, antecipamos ou postergamos a saída de Londrina
+                  automaticamente. O passageiro não precisa se preocupar em nos avisar: nós acompanhamos.
+                </p>
+                <p style={{ color: "#A8A8A8", fontSize: "0.95rem", lineHeight: 1.8 }}>
+                  Para chegadas em Guarulhos, o motorista aguarda no saguão de desembarque do terminal
+                  correto, com placa personalizada com o nome do passageiro ou da empresa. Não há pressa —
+                  o tempo de espera está incluso no serviço.
+                </p>
+              </div>
+              <div>
+                <h3 style={{ fontWeight: 700, fontSize: "1rem", color: "#C9A84C", marginBottom: "0.75rem" }}>Atendimento para viagens internacionais</h3>
+                <p style={{ color: "#A8A8A8", fontSize: "0.95rem", lineHeight: 1.8, marginBottom: "1rem" }}>
+                  Executivos que embarcam em voos internacionais a partir do GRU precisam de mais tempo
+                  para check-in, despacho de bagagem e controle de passaporte. Para esses casos,
+                  recomendamos saída de Londrina com oito horas de antecedência, garantindo chegada ao
+                  terminal T3 com duas a três horas antes do embarque.
+                </p>
+                <p style={{ color: "#A8A8A8", fontSize: "0.95rem", lineHeight: 1.8 }}>
+                  O motorista bilíngue em inglês está disponível para executivos estrangeiros que desembarcam
+                  em Guarulhos e precisam chegar a Londrina — seja para visitar clientes, cooperativas
+                  ou plantas industriais no norte do Paraná.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ════════ PARA EMPRESAS ════════ */}
+        <section aria-labelledby="empresas-gru-heading" style={{ background: "#141414", padding: "5rem 1.5rem" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto" }}>
+            <div style={{ width: "48px", height: "1px", background: "#C9A84C", marginBottom: "1.5rem" }} />
+            <h2 id="empresas-gru-heading" style={{ fontSize: "clamp(1.375rem,2.8vw,1.875rem)", fontWeight: 800, color: "#F0F0F0", marginBottom: "1rem" }}>
+              Atendimento para executivos e empresas
+            </h2>
+            <p style={{ color: "#6B6B6B", marginBottom: "2rem", maxWidth: "640px" }}>
+              Por que empresas do norte do Paraná utilizam o transfer Londrina Guarulhos regularmente.
+            </p>
+            <div style={{ maxWidth: "780px" }}>
+              <p style={{ color: "#A8A8A8", fontSize: "0.95rem", lineHeight: 1.8, marginBottom: "1.25rem" }}>
+                Cooperativas agrícolas, indústrias e distribuidoras do norte do Paraná têm em Guarulhos
+                o principal aeroporto de conexão para voos internacionais — especialmente para destinos como
+                Miami, Lisboa, Frankfurt e Amsterdã, que concentram parte significativa dos negócios do
+                agronegócio brasileiro.
+              </p>
+              <p style={{ color: "#A8A8A8", fontSize: "0.95rem", lineHeight: 1.8, marginBottom: "1.25rem" }}>
+                Para essas empresas, o transfer executivo elimina o estresse da viagem de carro próprio,
+                o custo do estacionamento no aeroporto por longos períodos e o risco de imprevistos
+                sem suporte em rodovia. O executivo embarca descansado, sem ter dirigido 470 quilômetros.
+              </p>
+              <p style={{ color: "#A8A8A8", fontSize: "0.95rem", lineHeight: 1.8 }}>
+                Empresas com executivos que viajam frequentemente para o exterior podem contratar o serviço
+                em regime de contrato mensal, com faturamento centralizado e nota fiscal para cada viagem.
+                A reserva é feita diretamente pelo responsável administrativo via WhatsApp, sem necessidade
+                de aprovação prévia para cada corrida.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* ════════ QUANDO VALE A PENA ════════ */}
+        <section aria-labelledby="valepena-heading" style={{ background: "#0A0A0A", padding: "5rem 1.5rem" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto" }}>
+            <div style={{ width: "48px", height: "1px", background: "#C9A84C", marginBottom: "1.5rem" }} />
+            <h2 id="valepena-heading" style={{ fontSize: "clamp(1.375rem,2.8vw,1.875rem)", fontWeight: 800, color: "#F0F0F0", marginBottom: "1rem" }}>
+              Quando vale a pena contratar transfer privado
+            </h2>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(300px,1fr))", gap: "1.25rem", maxWidth: "900px" }}>
+              {[
+                { icon: "✅", titulo: "Voo com horário fixo e não cancelável", desc: "Passagens aéreas internacionais e executivas têm penalidade alta para cancelamento. Um transfer privado com motorista que monitora o trânsito é mais seguro que depender do próprio carro." },
+                { icon: "✅", titulo: "Retorno de viagem longa ou cansativa", desc: "Após uma viagem de negócios de vários dias, dirigir 470 km de volta a Londrina representa risco real de cansaço. O transfer permite descanso imediato durante o trajeto." },
+                { icon: "✅", titulo: "Bagagem volumosa para viagem internacional", desc: "Malas de despacho para viagens longas ocupam espaço no carro próprio e dificultam a condução. O veículo executivo é preparado para esse tipo de carga." },
+                { icon: "✅", titulo: "Executivo estrangeiro que não conhece a rota", desc: "Visitantes internacionais que desembarcam em Guarulhos e precisam chegar a Londrina não conhecem a rota nem falam português. O motorista bilíngue resolve os dois problemas." },
+              ].map(item => (
+                <div key={item.titulo} style={{ background: "#141414", borderRadius: "8px", padding: "1.25rem", border: "1px solid #2A2A2A", display: "flex", gap: "0.875rem" }}>
+                  <span style={{ fontSize: "1.25rem", flexShrink: 0, color: "#50c878" }}>{item.icon}</span>
+                  <div>
+                    <h3 style={{ fontWeight: 700, fontSize: "0.875rem", color: "#F0F0F0", marginBottom: "0.35rem" }}>{item.titulo}</h3>
+                    <p style={{ color: "#6B6B6B", fontSize: "0.825rem", lineHeight: 1.65, margin: 0 }}>{item.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ════════ COMO FUNCIONA A RESERVA ════════ */}
+        <section aria-labelledby="reserva-gru-heading" style={{ background: "#141414", padding: "5rem 1.5rem" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto" }}>
+            <div style={{ width: "48px", height: "1px", background: "#C9A84C", marginBottom: "1.5rem" }} />
+            <h2 id="reserva-gru-heading" style={{ fontSize: "clamp(1.375rem,2.8vw,1.875rem)", fontWeight: 800, color: "#F0F0F0", marginBottom: "1rem" }}>
+              Como funciona a reserva
+            </h2>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(220px,1fr))", gap: "1.25rem", maxWidth: "900px" }}>
+              {[
+                { num: "01", titulo: "Informe os dados da viagem", desc: "Envie pelo WhatsApp: data de embarque, horário do voo, terminal de destino e número de passageiros." },
+                { num: "02", titulo: "Confirme o agendamento", desc: "Nossa equipe confirma disponibilidade, informa o valor e envia os dados do motorista e veículo." },
+                { num: "03", titulo: "Embarque sem preocupação", desc: "O motorista chega ao endereço combinado com antecedência. Para chegadas em GRU, aguarda no terminal com placa." },
+                { num: "04", titulo: "Nota fiscal emitida", desc: "Após a viagem, a nota fiscal é emitida e enviada por e-mail ou WhatsApp no prazo acordado." },
+              ].map(p => (
+                <div key={p.num} style={{ background: "#1C1C1C", borderRadius: "8px", padding: "1.25rem", border: "1px solid #2A2A2A" }}>
+                  <p style={{ fontSize: "1.5rem", fontWeight: 900, color: "rgba(201,168,76,.3)", marginBottom: "0.5rem", fontFamily: "Georgia,serif" }}>{p.num}</p>
+                  <h3 style={{ fontWeight: 700, fontSize: "0.875rem", color: "#F0F0F0", marginBottom: "0.35rem" }}>{p.titulo}</h3>
+                  <p style={{ color: "#6B6B6B", fontSize: "0.825rem", lineHeight: 1.6, margin: 0 }}>{p.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         <section aria-labelledby="faq-gru-heading" style={{ background: "#141414", padding: "5rem 1.5rem" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto" }}>
             <div style={{ width: "48px", height: "1px", background: "#C9A84C", marginBottom: "1.5rem" }} />

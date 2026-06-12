@@ -75,6 +75,22 @@ const faqItems = [
       "Para viagens com múltiplas paradas ou roteiros personalizados, " +
       "entre em contato pelo WhatsApp para elaborarmos uma proposta específica.",
   },
+  {
+    question: "O transfer cobre o Aeroporto de Congonhas (CGH)?",
+    answer:
+      "Sim. Congonhas é um dos destinos mais frequentes dentro da capital paulista. " +
+      "O aeroporto está localizado na Zona Sul de São Paulo, próximo à Av. Washington Luís. " +
+      "Para embarques em Congonhas com saída de Londrina, recomendamos partir com seis horas de antecedência " +
+      "para garantir check-in e despacho de bagagem com conforto.",
+  },
+  {
+    question: "Atendem empresas com executivos que viajam frequentemente para SP?",
+    answer:
+      "Sim. Para empresas com demanda regular de viagens Londrina-São Paulo, " +
+      "oferecemos contrato mensal com faturamento centralizado, " +
+      "relatório de todas as viagens e nota fiscal por competência. " +
+      "A reserva é feita pelo responsável administrativo via WhatsApp, com confirmação em minutos.",
+  },
 ]
 
 const breadcrumbSchema = buildBreadcrumbSchema([
@@ -223,6 +239,185 @@ export default function LondrinaSaoPauloPage() {
         </section>
 
         {/* FAQ */}
+
+        {/* ════════ TRANSFER EXECUTIVO SP ════════ */}
+        <section aria-labelledby="transfer-sp-heading" style={{ background: "#0A0A0A", padding: "5rem 1.5rem" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto" }}>
+            <div style={{ width: "48px", height: "1px", background: "#C9A84C", marginBottom: "1.5rem" }} />
+            <h2 id="transfer-sp-heading" style={{ fontSize: "clamp(1.375rem,2.8vw,1.875rem)", fontWeight: 800, color: "#F0F0F0", marginBottom: "1.5rem" }}>
+              Transfer executivo para São Paulo
+            </h2>
+            <div style={{ maxWidth: "780px", display: "flex", flexDirection: "column", gap: "1rem" }}>
+              <p style={{ color: "#A8A8A8", fontSize: "0.95rem", lineHeight: 1.8 }}>
+                O transfer executivo de Londrina para São Paulo é um dos serviços de maior demanda no norte do Paraná.
+                Com 450 quilômetros de distância pela Rodovia Castelo Branco, o percurso conecta Londrina
+                ao principal centro financeiro e de negócios do Brasil — sem baldeações, sem aeroportos,
+                sem espera em fila.
+              </p>
+              <p style={{ color: "#A8A8A8", fontSize: "0.95rem", lineHeight: 1.8 }}>
+                Para empresas e executivos que precisam chegar em horário preciso a reuniões na Paulista,
+                consultas em hospitais como Albert Einstein e Sírio-Libanês, ou apresentações em Faria Lima,
+                o transfer executivo oferece a previsibilidade que o trânsito interno de São Paulo exige.
+                O motorista calcula a saída de Londrina considerando o trânsito no acesso à capital.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* ════════ DISTÂNCIA E TEMPO ════════ */}
+        <section aria-labelledby="dist-sp-heading" style={{ background: "#141414", padding: "5rem 1.5rem" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto" }}>
+            <div style={{ width: "48px", height: "1px", background: "#C9A84C", marginBottom: "1.5rem" }} />
+            <h2 id="dist-sp-heading" style={{ fontSize: "clamp(1.375rem,2.8vw,1.875rem)", fontWeight: 800, color: "#F0F0F0", marginBottom: "1.5rem" }}>
+              Distância e tempo médio da viagem
+            </h2>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(300px,1fr))", gap: "2rem", maxWidth: "900px" }}>
+              <div>
+                <p style={{ color: "#A8A8A8", fontSize: "0.95rem", lineHeight: 1.8, marginBottom: "1.25rem" }}>
+                  O percurso de <strong style={{ color: "#F0F0F0" }}>450 km</strong> pela BR-369 até Ourinhos e depois pela
+                  Rodovia Castelo Branco (SP-280) tem tempo médio de <strong style={{ color: "#F0F0F0" }}>cinco horas</strong> em
+                  condições normais. Para destinos na Zona Norte, Guarulhos ou pontos acima da Marginal Tietê,
+                  considere acrescentar de 30 a 60 minutos.
+                </p>
+                <p style={{ color: "#A8A8A8", fontSize: "0.95rem", lineHeight: 1.8 }}>
+                  As saídas mais eficientes de Londrina são entre quatro e sete horas da manhã,
+                  quando o tráfego na Castelo Branco e no acesso à cidade de São Paulo é menor.
+                  Compromissos marcados para as dez da manhã são atendidos confortavelmente com saída às quatro e meia.
+                </p>
+              </div>
+              <div>
+                <p style={{ color: "#A8A8A8", fontSize: "0.95rem", lineHeight: 1.8, marginBottom: "1.25rem" }}>
+                  Para retornos a Londrina com saída de São Paulo entre 17h e 20h, o trânsito nas marginais
+                  e na saída pela Castelo Branco pode acrescentar até uma hora no início do percurso.
+                  Para quem precisa chegar a Londrina em horário específico, recomendamos informar o horário
+                  de chegada desejado para que o motorista calcule a saída ideal.
+                </p>
+                <p style={{ color: "#A8A8A8", fontSize: "0.95rem", lineHeight: 1.8 }}>
+                  Pedágios na Rodovia Castelo Branco e trechos da SP-280 estão inclusos no orçamento informado.
+                  Nenhuma cobrança adicional é feita após a confirmação do valor.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ════════ DESTINOS NA CAPITAL ════════ */}
+        <section aria-labelledby="destinos-sp-heading" style={{ background: "#0A0A0A", padding: "5rem 1.5rem" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto" }}>
+            <div style={{ width: "48px", height: "1px", background: "#C9A84C", marginBottom: "1.5rem" }} />
+            <h2 id="destinos-sp-heading" style={{ fontSize: "clamp(1.375rem,2.8vw,1.875rem)", fontWeight: 800, color: "#F0F0F0", marginBottom: "1rem" }}>
+              Atendimento na capital paulista
+            </h2>
+            <p style={{ color: "#6B6B6B", marginBottom: "2.5rem", maxWidth: "600px" }}>
+              Principais destinos atendidos dentro da cidade de São Paulo e Grande SP.
+            </p>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(260px,1fr))", gap: "1.25rem", maxWidth: "900px" }}>
+              <div style={{ background: "#141414", borderRadius: "8px", padding: "1.25rem", border: "1px solid #2A2A2A" }}>
+                <h3 style={{ fontWeight: 700, fontSize: "0.9rem", color: "#C9A84C", marginBottom: "0.5rem" }}>Congonhas (CGH)</h3>
+                <p style={{ color: "#6B6B6B", fontSize: "0.85rem", lineHeight: 1.65, margin: 0 }}>
+                  Aeroporto de Congonhas atende voos domésticos para Londrina e demais destinos. Para embarques,
+                  recomendamos saída de Londrina com seis horas de antecedência.
+                </p>
+              </div>
+              <div style={{ background: "#141414", borderRadius: "8px", padding: "1.25rem", border: "1px solid #2A2A2A" }}>
+                <h3 style={{ fontWeight: 700, fontSize: "0.9rem", color: "#C9A84C", marginBottom: "0.5rem" }}>Av. Paulista e Centro Financeiro</h3>
+                <p style={{ color: "#6B6B6B", fontSize: "0.85rem", lineHeight: 1.65, margin: 0 }}>
+                  Reuniões em escritórios na Paulista, Faria Lima, Itaim Bibi, Berrini e Brooklin são os destinos
+                  mais frequentes para executivos de Londrina.
+                </p>
+              </div>
+              <div style={{ background: "#141414", borderRadius: "8px", padding: "1.25rem", border: "1px solid #2A2A2A" }}>
+                <h3 style={{ fontWeight: 700, fontSize: "0.9rem", color: "#C9A84C", marginBottom: "0.5rem" }}>Hospitais e clínicas</h3>
+                <p style={{ color: "#6B6706", fontSize: "0.85rem", lineHeight: 1.65, margin: 0, color: "#6B6B6B" }}>
+                  Hospital Albert Einstein (Morumbi), Hospital Sírio-Libanês (Bela Vista), A.C.Camargo e HCor.
+                  Atendemos familiares e pacientes que precisam de transporte confortável para procedimentos em SP.
+                </p>
+              </div>
+              <div style={{ background: "#141414", borderRadius: "8px", padding: "1.25rem", border: "1px solid #2A2A2A" }}>
+                <h3 style={{ fontWeight: 700, fontSize: "0.9rem", color: "#C9A84C", marginBottom: "0.5rem" }}>Grande SP e eventos</h3>
+                <p style={{ color: "#6B6B6B", fontSize: "0.85rem", lineHeight: 1.65, margin: 0 }}>
+                  Osasco, Santo André, São Bernardo, Guarulhos e o Expo Center Norte (feiras e convenções).
+                  Atendemos qualquer endereço na Grande São Paulo.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ════════ CORPORATIVO E EVENTOS ════════ */}
+        <section aria-labelledby="corp-sp-heading" style={{ background: "#141414", padding: "5rem 1.5rem" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto" }}>
+            <div style={{ width: "48px", height: "1px", background: "#C9A84C", marginBottom: "1.5rem" }} />
+            <h2 id="corp-sp-heading" style={{ fontSize: "clamp(1.375rem,2.8vw,1.875rem)", fontWeight: 800, color: "#F0F0F0", marginBottom: "1.5rem" }}>
+              Reuniões corporativas e eventos empresariais
+            </h2>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(340px,1fr))", gap: "2rem", maxWidth: "900px" }}>
+              <div>
+                <h3 style={{ fontWeight: 700, fontSize: "1rem", color: "#C9A84C", marginBottom: "0.75rem" }}>Para executivos em reuniões</h3>
+                <p style={{ color: "#A8A8A8", fontSize: "0.95rem", lineHeight: 1.8, marginBottom: "1rem" }}>
+                  Diretores e gerentes que viajam de Londrina para apresentações em São Paulo chegam descansados
+                  e prontos para o compromisso. Durante os 450 km de viagem, é possível revisar apresentações,
+                  atender ligações ou simplesmente descansar — sem a carga de dirigir na rodovia.
+                </p>
+                <p style={{ color: "#A8A8A8", fontSize: "0.95rem", lineHeight: 1.8 }}>
+                  Para retornos no mesmo dia, o motorista aguarda em São Paulo enquanto o executivo
+                  cumpre a agenda, retornando a Londrina no período da tarde ou noite.
+                </p>
+              </div>
+              <div>
+                <h3 style={{ fontWeight: 700, fontSize: "1rem", color: "#C9A84C", marginBottom: "0.75rem" }}>Para feiras e convenções</h3>
+                <p style={{ color: "#A8A8A8", fontSize: "0.95rem", lineHeight: 1.8, marginBottom: "1rem" }}>
+                  Feiras como Agrishow, FEBRABAN Tech e Fenabrave acontecem em São Paulo e reúnem profissionais
+                  do norte do Paraná anualmente. O transfer executivo é a opção mais prática para
+                  grupos de dois a quatro pessoas que precisam chegar juntos e com bagagem para eventos de múltiplos dias.
+                </p>
+                <p style={{ color: "#A8A8A8", fontSize: "0.95rem", lineHeight: 1.8 }}>
+                  Para grupos maiores, contamos com vans executivas de sete lugares — ideal para
+                  equipes comerciais que viajam em conjunto para apresentações ou estandes em feiras.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        {/* ════════ QUANDO CONTRATAR SP ════════ */}
+        <section aria-labelledby="quando-sp-heading" style={{ background: "#0A0A0A", padding: "5rem 1.5rem" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto" }}>
+            <div style={{ width: "48px", height: "1px", background: "#C9A84C", marginBottom: "1.5rem" }} />
+            <h2 id="quando-sp-heading" style={{ fontSize: "clamp(1.375rem,2.8vw,1.875rem)", fontWeight: 800, color: "#F0F0F0", marginBottom: "1rem" }}>
+              Como funciona a contratação
+            </h2>
+            <p style={{ color: "#6B6B6B", marginBottom: "2.5rem", maxWidth: "580px" }}>
+              Processo direto, sem intermediários. Do agendamento à chegada em São Paulo com hora marcada.
+            </p>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(220px,1fr))", gap: "1.25rem", maxWidth: "900px" }}>
+              {[
+                { num: "01", titulo: "Solicite pelo WhatsApp", desc: "Informe a data, horário de chegada desejado em SP e o endereço de destino. Nossa equipe calcula o horário de saída de Londrina." },
+                { num: "02", titulo: "Receba a confirmação", desc: "Dados do motorista, placa do veículo e horário de saída confirmados com antecedência por escrito." },
+                { num: "03", titulo: "Viaje com conforto", desc: "450 km com veículo climatizado e motorista profissional. Use o tempo da viagem para descansar ou trabalhar." },
+                { num: "04", titulo: "Nota fiscal emitida", desc: "Para pessoa física ou CNPJ. Faturamento mensal disponível para empresas com viagens frequentes." },
+              ].map(p => (
+                <div key={p.num} style={{ background: "#141414", borderRadius: "8px", padding: "1.25rem", border: "1px solid #2A2A2A" }}>
+                  <p style={{ fontSize: "1.5rem", fontWeight: 900, color: "rgba(201,168,76,.3)", marginBottom: "0.5rem", fontFamily: "Georgia,serif" }}>{p.num}</p>
+                  <h3 style={{ fontWeight: 700, fontSize: "0.875rem", color: "#F0F0F0", marginBottom: "0.35rem" }}>{p.titulo}</h3>
+                  <p style={{ color: "#6B6B6B", fontSize: "0.825rem", lineHeight: 1.6, margin: 0 }}>{p.desc}</p>
+                </div>
+              ))}
+            </div>
+            <div style={{ marginTop: "2.5rem", background: "#141414", borderRadius: "8px", padding: "1.5rem", border: "1px solid #2A2A2A", maxWidth: "680px" }}>
+              <p style={{ color: "#C9A84C", fontWeight: 700, fontSize: "0.875rem", marginBottom: "0.5rem" }}>Por que o transfer privado compete com o voo regional?</p>
+              <p style={{ color: "#A8A8A8", fontSize: "0.875rem", lineHeight: 1.75, margin: 0 }}>
+                O voo Londrina-Congonhas dura cerca de 55 minutos, mas o processo completo — deslocamento ao aeroporto de Londrina,
+                check-in, embarque, desembarque e deslocamento ao destino em SP — facilmente soma quatro horas.
+                O transfer executivo direto cobre o mesmo trajeto porta a porta em cinco horas, sem filas, sem restrições de bagagem
+                e com saída do seu endereço em Londrina. Para compromissos que não exigem chegada de manhã cedo,
+                o transfer é mais prático e, em muitos casos, mais econômico.
+              </p>
+            </div>
+          </div>
+        </section>
+
         <section aria-labelledby="faq-sp-heading" style={{ background: "#0A0A0A", padding: "5rem 1.5rem" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto" }}>
             <div style={{ width: "48px", height: "1px", background: "#C9A84C", marginBottom: "1.5rem" }} />

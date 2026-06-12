@@ -30,34 +30,67 @@ const serviceSchema = buildServiceSchema({
 
 const faqItems = [
   {
-    question: "O que diferencia o transporte executivo do transporte convencional?",
+    question: "O que é transporte terrestre executivo?",
     answer:
-      "O transporte executivo é contratado com agendamento antecipado, utiliza veículo premium padronizado " +
-      "e inclui motorista profissional com apresentação formal. " +
-      "Ao contrário do transporte por demanda imediata, o executivo garante pontualidade, " +
-      "cobertura de rotas interestaduais e emissão de nota fiscal para pessoa jurídica.",
+      "Transporte terrestre executivo é o serviço de deslocamento profissional com veículo premium, " +
+      "motorista habilitado e agendamento antecipado. " +
+      "Diferencia-se do transporte convencional por garantir pontualidade, " +
+      "apresentação formal do motorista, veículo padronizado e higienizado, " +
+      "emissão de nota fiscal e cobertura de rotas locais e interestaduais. " +
+      "É o padrão adotado por executivos, diretores e empresas que precisam de mobilidade confiável " +
+      "sem abrir mão do conforto e da segurança.",
   },
   {
     question: "Quais rotas de longa distância a empresa atende a partir de Londrina?",
     answer:
-      "As rotas principais são: Londrina → Aeroporto de Guarulhos (GRU, 470 km), " +
-      "Londrina → São Paulo (450 km pela Castelo Branco), " +
-      "e Londrina → Curitiba (398 km pela BR-376). " +
-      "Para destinos não listados, entre em contato para orçamento personalizado.",
+      "As rotas principais são: Londrina → Aeroporto Internacional de Guarulhos (GRU, 470 km), " +
+      "Londrina → São Paulo — capital e Grande SP (450 km pela Rodovia Castelo Branco), " +
+      "Londrina → Curitiba (398 km pela BR-376) " +
+      "e Londrina → Maringá (118 km pela PR-317). " +
+      "Para destinos fora dessas rotas, consulte disponibilidade e orçamento pelo WhatsApp.",
   },
   {
     question: "A empresa atende contratos corporativos para mobilidade recorrente?",
     answer:
       "Sim. Para empresas com demanda regular, oferecemos contratos de mobilidade corporativa " +
-      "com faturamento mensal, relatório de viagens e nota fiscal centralizada. " +
-      "A proposta é elaborada conforme o volume e as rotas da empresa.",
+      "com faturamento mensal centralizado, relatório detalhado de todas as viagens realizadas " +
+      "e nota fiscal para CNPJ de qualquer porte. " +
+      "A proposta comercial é elaborada conforme o volume mensal de viagens e as rotas utilizadas. " +
+      "Atendemos indústrias, cooperativas, escritórios de advocacia e empresas de todos os segmentos.",
   },
   {
-    question: "É possível contratar transporte executivo para eventos em Londrina?",
+    question: "Como funciona o agendamento do transporte executivo?",
     answer:
-      "Sim. Atendemos logística de transporte para eventos corporativos, conferências e feiras em Londrina. " +
-      "O serviço inclui transfer do aeroporto ou hotel para o local do evento " +
-      "e retorno ao final, com motorista disponível durante toda a programação se necessário.",
+      "O agendamento é feito pelo WhatsApp ou por telefone. " +
+      "Informe a origem, o destino, a data e o horário desejado — " +
+      "nossa equipe confirma disponibilidade e envia os dados do motorista e do veículo antes da viagem. " +
+      "Para viagens interestaduais, recomendamos agendamento com ao menos 24 horas de antecedência. " +
+      "Para corridas locais em Londrina, atendemos com prazos menores mediante disponibilidade.",
+  },
+  {
+    question: "Qual veículo é utilizado no transporte executivo?",
+    answer:
+      "A frota é composta por veículos executivos premium: Toyota Corolla Cross, Jeep Compass " +
+      "e Volkswagen T-Cross para até quatro passageiros, " +
+      "além de vans executivas para grupos de até sete pessoas. " +
+      "Todos os veículos são revisados periodicamente, climatizados e mantidos em perfeito estado de higiene " +
+      "para garantir o padrão exigido por empresas e executivos.",
+  },
+  {
+    question: "É possível contratar transporte executivo para eventos corporativos?",
+    answer:
+      "Sim. Atendemos logística de transporte para eventos corporativos, conferências, feiras e convenções. " +
+      "O serviço inclui transfer do aeroporto ou hotel para o local do evento, " +
+      "transporte entre pontos durante a programação " +
+      "e retorno ao final, com motorista disponível por toda a duração do evento se necessário.",
+  },
+  {
+    question: "O serviço emite nota fiscal para empresas?",
+    answer:
+      "Sim. Emitimos nota fiscal para pessoas físicas e jurídicas. " +
+      "Para empresas com contrato mensal, o faturamento é centralizado com relatório de todas as viagens, " +
+      "facilitando a prestação de contas interna. " +
+      "A nota fiscal é emitida no prazo acordado e enviada por e-mail ou WhatsApp.",
   },
 ]
 
@@ -165,6 +198,203 @@ export default function TransporteExecutivoLondrinaPage() {
                   </div>
                 </Link>
               ))}
+            </div>
+          </div>
+        </section>
+
+
+        {/* ════════ O QUE É ════════ */}
+        <section aria-labelledby="oque-e-heading" style={{ background: "#0A0A0A", padding: "5rem 1.5rem" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto" }}>
+            <div style={{ width: "48px", height: "1px", background: "#C9A84C", marginBottom: "1.5rem" }} />
+            <h2 id="oque-e-heading" style={{ fontSize: "clamp(1.375rem,2.8vw,1.875rem)", fontWeight: 800, color: "#F0F0F0", marginBottom: "1.5rem" }}>
+              O que é transporte terrestre executivo
+            </h2>
+            <div style={{ maxWidth: "780px", display: "flex", flexDirection: "column", gap: "1rem" }}>
+              <p style={{ color: "#A8A8A8", fontSize: "0.95rem", lineHeight: 1.8 }}>
+                Transporte terrestre executivo é o serviço de deslocamento profissional que combina veículo premium,
+                motorista qualificado e agendamento com hora marcada. Diferente do transporte por aplicativo ou do
+                táxi convencional, o serviço executivo é contratado com antecedência e segue um padrão rígido de
+                apresentação, pontualidade e atendimento ao cliente.
+              </p>
+              <p style={{ color: "#A8A8A8", fontSize: "0.95rem", lineHeight: 1.8 }}>
+                A principal distinção está no nível de previsibilidade e confiança. Empresas que utilizam transporte
+                executivo para diretores, visitantes e equipes comerciais sabem exatamente o que esperar: veículo
+                identificado, motorista uniformizado, pontualidade no local combinado e emissão de nota fiscal para
+                CNPJ. Não há surpresas de preço nem risco de cancelamento de última hora.
+              </p>
+              <p style={{ color: "#A8A8A8", fontSize: "0.95rem", lineHeight: 1.8 }}>
+                Para viagens de longa distância — como o trajeto de Londrina ao Aeroporto de Guarulhos ou à capital
+                paulista — o transporte executivo oferece ainda a vantagem do conforto em viagens de cinco a seis
+                horas de duração, com veículos amplos, climatizados e preparados para receber bagagem de despacho.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* ════════ QUANDO CONTRATAR ════════ */}
+        <section aria-labelledby="quando-heading" style={{ background: "#141414", padding: "5rem 1.5rem" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto" }}>
+            <div style={{ width: "48px", height: "1px", background: "#C9A84C", marginBottom: "1.5rem" }} />
+            <h2 id="quando-heading" style={{ fontSize: "clamp(1.375rem,2.8vw,1.875rem)", fontWeight: 800, color: "#F0F0F0", marginBottom: "1rem" }}>
+              Quando contratar transporte executivo em Londrina
+            </h2>
+            <p style={{ color: "#6B6B6B", marginBottom: "2.5rem", maxWidth: "640px" }}>
+              Situações em que o padrão executivo faz diferença real para empresas e profissionais.
+            </p>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(300px,1fr))", gap: "1.25rem", maxWidth: "900px" }}>
+              {[
+                { icon: "✈️", titulo: "Viagem com hora marcada para aeroporto", desc: "Voos domésticos e internacionais com horário fixo não admitem atraso. O transporte executivo calcula a saída com base no horário do voo e monitora o trânsito em tempo real." },
+                { icon: "🏢", titulo: "Recepção de visitantes e clientes", desc: "A primeira impressão importa. Receber um cliente ou parceiro de negócios com motorista uniformizado e veículo premium transmite profissionalismo antes mesmo da reunião começar." },
+                { icon: "🗺️", titulo: "Viagens interestaduais de longa distância", desc: "Para rotas de 400 a 500 km, o transporte executivo privado compete diretamente com o voo regional em custo e supera em praticidade — sem fila, sem conexão, sem espera." },
+                { icon: "📅", titulo: "Agenda corporativa com múltiplos compromissos", desc: "Executivos com reuniões em locais diferentes no mesmo dia utilizam o motorista por horas para otimizar deslocamentos sem preocupação com estacionamento ou trânsito." },
+                { icon: "🌍", titulo: "Visita de executivo ou parceiro estrangeiro", desc: "Para visitantes internacionais, o atendimento bilíngue em inglês e espanhol garante comunicação fluida do aeroporto até o hotel ou sede da empresa." },
+                { icon: "🏛️", titulo: "Eventos, feiras e conferências", desc: "Logística de transporte para grupos em eventos corporativos, com vans executivas para até sete passageiros e motorista disponível durante toda a programação." },
+              ].map(item => (
+                <div key={item.titulo} style={{ background: "#1C1C1C", borderRadius: "8px", padding: "1.5rem", border: "1px solid #2A2A2A", display: "flex", gap: "1rem", alignItems: "flex-start" }}>
+                  <span style={{ fontSize: "1.5rem", flexShrink: 0 }}>{item.icon}</span>
+                  <div>
+                    <h3 style={{ fontWeight: 700, fontSize: "0.9rem", color: "#F0F0F0", marginBottom: "0.4rem" }}>{item.titulo}</h3>
+                    <p style={{ color: "#6B6B6B", fontSize: "0.85rem", lineHeight: 1.65, margin: 0 }}>{item.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ════════ EMPRESAS E EXECUTIVOS ════════ */}
+        <section aria-labelledby="empresas-heading" style={{ background: "#0A0A0A", padding: "5rem 1.5rem" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto" }}>
+            <div style={{ width: "48px", height: "1px", background: "#C9A84C", marginBottom: "1.5rem" }} />
+            <h2 id="empresas-heading" style={{ fontSize: "clamp(1.375rem,2.8vw,1.875rem)", fontWeight: 800, color: "#F0F0F0", marginBottom: "1.5rem" }}>
+              Transporte para empresas e executivos
+            </h2>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(340px,1fr))", gap: "2rem", maxWidth: "900px" }}>
+              <div>
+                <p style={{ color: "#A8A8A8", fontSize: "0.95rem", lineHeight: 1.8, marginBottom: "1.25rem" }}>
+                  Empresas de qualquer porte utilizam o serviço de transporte executivo para padronizar
+                  a mobilidade de diretores, gerentes e visitantes. A vantagem do contrato corporativo
+                  é a previsibilidade: um único fornecedor, faturamento mensal centralizado e nota fiscal
+                  para cada viagem realizada.
+                </p>
+                <p style={{ color: "#A8A8A8", fontSize: "0.95rem", lineHeight: 1.8 }}>
+                  Setores como agronegócio, saúde, jurídico e indústria em Londrina e no norte do Paraná
+                  utilizam o serviço regularmente para deslocamentos entre unidades, visitas a clientes
+                  em São Paulo e transferências para o Aeroporto de Guarulhos.
+                </p>
+              </div>
+              <div>
+                <p style={{ color: "#A8A8A8", fontSize: "0.95rem", lineHeight: 1.8, marginBottom: "1.25rem" }}>
+                  Para executivos e profissionais liberais, o serviço por horas ou diária oferece um motorista
+                  dedicado com veículo premium durante toda a agenda. Enquanto o motorista conduz,
+                  o executivo pode revisar documentos, fazer ligações ou simplesmente descansar —
+                  especialmente relevante em viagens longas.
+                </p>
+                <p style={{ color: "#A8A8A8", fontSize: "0.95rem", lineHeight: 1.8 }}>
+                  O atendimento bilíngue em inglês e espanhol permite que a empresa receba executivos
+                  estrangeiros com o mesmo nível de serviço oferecido em capitais como São Paulo e Curitiba,
+                  sem depender de intermediários.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ════════ AEROPORTOS E ROTAS ════════ */}
+        <section aria-labelledby="aeroportos-heading" style={{ background: "#141414", padding: "5rem 1.5rem" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto" }}>
+            <div style={{ width: "48px", height: "1px", background: "#C9A84C", marginBottom: "1.5rem" }} />
+            <h2 id="aeroportos-heading" style={{ fontSize: "clamp(1.375rem,2.8vw,1.875rem)", fontWeight: 800, color: "#F0F0F0", marginBottom: "1rem" }}>
+              Transporte para aeroportos e viagens intermunicipais
+            </h2>
+            <p style={{ color: "#6B6B6B", marginBottom: "2.5rem", maxWidth: "640px" }}>
+              As rotas de maior demanda a partir de Londrina e os serviços de transfer para cada aeroporto.
+            </p>
+            <div style={{ display: "flex", flexDirection: "column", gap: "1rem", maxWidth: "820px" }}>
+              {[
+                { rota: "Londrina → Guarulhos (GRU)", km: "470 km", tempo: "≈ 5h30", desc: "Transfer para o Aeroporto Internacional de Guarulhos, principal hub de voos internacionais do Brasil. Atendemos os três terminais com monitoramento de voo em tempo real.", href: "/londrina-guarulhos" },
+                { rota: "Londrina → São Paulo", km: "450 km", tempo: "≈ 5h", desc: "Transfer para reuniões, hospitais, Congonhas e qualquer endereço na capital paulista ou Grande SP. Rodovia Castelo Branco com saída calculada pelo horário do compromisso.", href: "/londrina-sao-paulo" },
+                { rota: "Airport Transfer LDB", km: "Local", tempo: "Monit. de voo", desc: "Chegadas e partidas no Aeroporto Governador José Richa (LDB). Motorista com placa personalizada e monitoramento de atrasos para garantia de embarque.", href: "/airport-transfer-londrina" },
+              ].map(r => (
+                <Link key={r.rota} href={r.href} style={{ textDecoration: "none" }}>
+                  <div style={{ background: "#1C1C1C", borderRadius: "8px", padding: "1.25rem 1.5rem", border: "1px solid #2A2A2A", display: "flex", alignItems: "center", justifyContent: "space-between", gap: "1rem" }}>
+                    <div style={{ flex: 1 }}>
+                      <p style={{ fontWeight: 700, fontSize: "0.95rem", color: "#F0F0F0", marginBottom: "0.25rem" }}>{r.rota}</p>
+                      <p style={{ fontSize: "0.8rem", color: "#6B6B6B", margin: 0 }}>{r.desc}</p>
+                    </div>
+                    <div style={{ textAlign: "right", flexShrink: 0 }}>
+                      <p style={{ fontWeight: 800, fontSize: "0.9rem", color: "#C9A84C", margin: "0 0 0.15rem" }}>{r.km}</p>
+                      <p style={{ fontSize: "0.75rem", color: "#6B6B6B", margin: "0 0 0.25rem" }}>{r.tempo}</p>
+                      <span style={{ fontSize: "0.75rem", color: "#C9A84C", fontWeight: 600 }}>Ver rota →</span>
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ════════ BENEFÍCIOS ════════ */}
+        <section aria-labelledby="beneficios-heading" style={{ background: "#0A0A0A", padding: "5rem 1.5rem" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto" }}>
+            <div style={{ width: "48px", height: "1px", background: "#C9A84C", marginBottom: "1.5rem" }} />
+            <h2 id="beneficios-heading" style={{ fontSize: "clamp(1.375rem,2.8vw,1.875rem)", fontWeight: 800, color: "#F0F0F0", marginBottom: "1rem" }}>
+              Benefícios do transporte executivo profissional
+            </h2>
+            <p style={{ color: "#6B6B6B", marginBottom: "2.5rem", maxWidth: "640px" }}>
+              Por que empresas e executivos migram do transporte convencional para o serviço executivo.
+            </p>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(260px,1fr))", gap: "1.5rem" }}>
+              {[
+                { icon: "⏱️", titulo: "Pontualidade previsível", desc: "O horário de saída é calculado com base no compromisso, não na disponibilidade do motorista. Chegadas dentro do prazo, sempre." },
+                { icon: "🎩", titulo: "Motorista de apresentação formal", desc: "Traje social, postura discreta e condução segura. O motorista representa a empresa do contratante em cada atendimento." },
+                { icon: "📋", titulo: "Documentação e nota fiscal", desc: "Nota fiscal para PF e PJ, relatório de viagens para contratos mensais e comprovante de cada corrida realizada." },
+                { icon: "🔒", titulo: "Sigilo e discrição", desc: "Reuniões, negociações e informações confidenciais ficam dentro do veículo. Nossos motoristas são treinados para a discrição necessária no ambiente corporativo." },
+                { icon: "🗣️", titulo: "Comunicação bilíngue", desc: "Atendimento em português, inglês e espanhol para visitantes internacionais e executivos de empresas multinacionais." },
+                { icon: "💳", titulo: "Faturamento facilitado", desc: "Contratos mensais com faturamento centralizado, eliminando o reembolso individual de despesas de transporte." },
+              ].map(b => (
+                <div key={b.titulo} style={{ display: "flex", gap: "1rem", alignItems: "flex-start" }}>
+                  <div style={{ width: "44px", height: "44px", borderRadius: "8px", background: "rgba(201,168,76,.1)", border: "1px solid rgba(201,168,76,.2)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1.25rem", flexShrink: 0 }}>{b.icon}</div>
+                  <div>
+                    <h3 style={{ fontWeight: 700, fontSize: "0.9rem", color: "#F0F0F0", marginBottom: "0.3rem" }}>{b.titulo}</h3>
+                    <p style={{ color: "#6B6B6B", fontSize: "0.85rem", lineHeight: 1.65, margin: 0 }}>{b.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ════════ COMO FUNCIONA A CONTRATAÇÃO ════════ */}
+        <section aria-labelledby="contratacao-heading" style={{ background: "#141414", padding: "5rem 1.5rem" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto" }}>
+            <div style={{ width: "48px", height: "1px", background: "#C9A84C", marginBottom: "1.5rem" }} />
+            <h2 id="contratacao-heading" style={{ fontSize: "clamp(1.375rem,2.8vw,1.875rem)", fontWeight: 800, color: "#F0F0F0", marginBottom: "1rem" }}>
+              Como funciona a contratação
+            </h2>
+            <p style={{ color: "#6B6B6B", marginBottom: "3rem", maxWidth: "560px" }}>
+              Processo simples, sem burocracia. Do primeiro contato à confirmação em minutos.
+            </p>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(220px,1fr))", gap: "1.5rem", maxWidth: "900px" }}>
+              {[
+                { num: "01", titulo: "Solicite pelo WhatsApp ou telefone", desc: "Informe origem, destino, data e horário. Para viagens com voo, informe também o número do voo para monitoramento." },
+                { num: "02", titulo: "Receba a confirmação", desc: "Nossa equipe confirma disponibilidade e envia os dados do motorista, placa do veículo e horário de saída. Tudo por escrito." },
+                { num: "03", titulo: "Motorista no local combinado", desc: "O motorista chega com antecedência, uniformizado e com o veículo preparado. Para aeroportos, aguarda com placa personalizada." },
+                { num: "04", titulo: "Nota fiscal após a viagem", desc: "Emitimos a nota fiscal no prazo acordado. Para contratos mensais, o relatório completo é enviado no fechamento do mês." },
+              ].map(p => (
+                <div key={p.num} style={{ background: "#1C1C1C", borderRadius: "10px", padding: "1.5rem", border: "1px solid #2A2A2A" }}>
+                  <p style={{ fontSize: "1.75rem", fontWeight: 900, color: "rgba(201,168,76,.3)", marginBottom: "0.75rem", fontFamily: "Georgia,serif" }}>{p.num}</p>
+                  <h3 style={{ fontWeight: 700, fontSize: "0.9rem", color: "#F0F0F0", marginBottom: "0.5rem" }}>{p.titulo}</h3>
+                  <p style={{ color: "#6B6B6B", fontSize: "0.85rem", lineHeight: 1.65, margin: 0 }}>{p.desc}</p>
+                </div>
+              ))}
+            </div>
+            <div style={{ marginTop: "2.5rem" }}>
+              <a href={waHub} target="_blank" rel="noopener noreferrer"
+                style={{ display: "inline-flex", alignItems: "center", gap: "10px", background: "#C9A84C", color: "#0A0A0A", fontWeight: 800, fontSize: "1rem", padding: "0.875rem 2rem", borderRadius: "6px", textDecoration: "none" }}>
+                <WaIcon color="#0A0A0A" /> Solicitar agora pelo WhatsApp
+              </a>
             </div>
           </div>
         </section>
