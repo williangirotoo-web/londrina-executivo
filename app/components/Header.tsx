@@ -11,10 +11,13 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 
 const WA_URL = "https://wa.me/5544998913040?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20transporte%20executivo%20em%20Londrina."
+const EN_URL = "/en"
 
 const rotasLinks = [
-  { href: "/londrina-guarulhos", label: "Londrina → Guarulhos (GRU)" },
-  { href: "/londrina-sao-paulo", label: "Londrina → São Paulo" },
+  { href: "/londrina-guarulhos",      label: "Londrina → Guarulhos (GRU)" },
+  { href: "/londrina-sao-paulo",      label: "Londrina → São Paulo" },
+  { href: "/londrina-maringa",        label: "Londrina → Maringá" },
+  { href: "/londrina-foz-do-iguacu",  label: "Londrina → Foz do Iguaçu" },
 ]
 
 const servicosLinks = [
@@ -182,6 +185,13 @@ export default function Header() {
 
           {/* ── DIREITA: CTA + HAMBURGUER ── */}
           <div style={{ display: "flex", alignItems: "center", gap: "1rem", flexShrink: 0 }}>
+            {/* EN link */}
+            <a href={EN_URL}
+              className="le-cta-desktop"
+              style={{ color: "#6B6B6B", fontSize: "0.75rem", fontWeight: 500, textDecoration: "none", letterSpacing: "0.04em", transition: "color 0.15s" }}>
+              EN
+            </a>
+
             {/* CTA WhatsApp desktop */}
             <a href={WA_URL} target="_blank" rel="noopener noreferrer"
               className="le-cta-desktop"

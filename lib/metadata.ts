@@ -166,4 +166,70 @@ export const pageMetadata = {
     ogImageAlt: "Frota Executiva Londrina — Corolla Cross, Jeep Compass e VW T-Cross",
   }),
 
+  londrinaMaringa: buildMetadata({
+    title: "Transfer Londrina Maringá | Executivo · Corporativo · 120 km",
+    description:
+      "Transfer executivo de Londrina para Maringá em 120 km. " +
+      "Veículo premium, motorista profissional e nota fiscal. " +
+      "Atendemos empresas, hospitais, universidades e aeroporto regional.",
+    path: "/londrina-maringa",
+    ogImage: "og-londrina-maringa.jpg",
+    ogImageAlt: "Transfer Executivo Londrina Maringá — 120 km",
+  }),
+
+  londrinaFoz: buildMetadata({
+    title: "Transfer Londrina Foz do Iguaçu | Executivo · Cataratas · 650 km",
+    description:
+      "Transfer executivo de Londrina para Foz do Iguaçu. " +
+      "650 km com veículo premium para turismo corporativo, " +
+      "Cataratas do Iguaçu e aeroporto regional.",
+    path: "/londrina-foz-do-iguacu",
+    ogImage: "og-londrina-foz.jpg",
+    ogImageAlt: "Transfer Executivo Londrina Foz do Iguaçu — 650 km",
+  }),
+
+  enHome: buildMetadata({
+    title: "Executive Transportation in Londrina | Private Chauffeur & Transfer",
+    description:
+      "Executive transportation services in Londrina, Brazil. " +
+      "Airport transfers, private chauffeur and corporate transport. " +
+      "Premium vehicles, bilingual drivers, available 24/7.",
+    path: "/en",
+    ogImage: "og-en-home.jpg",
+    ogImageAlt: "Executive Transportation in Londrina Brazil",
+  }),
+
+  enAirport: buildMetadata({
+    title: "Airport Transfer Londrina | Executive Service — LDB & GRU",
+    description:
+      "Executive airport transfer service in Londrina. " +
+      "Arrivals and departures at LDB with flight monitoring. " +
+      "Direct transfer to Guarulhos International Airport (GRU).",
+    path: "/en/airport-transfer-londrina",
+    ogImage: "og-en-airport.jpg",
+    ogImageAlt: "Airport Transfer Londrina Executive Service",
+  }),
+
+  enDriver: buildMetadata({
+    title: "Executive Driver in Londrina | Private Chauffeur Service",
+    description:
+      "Professional executive driver service in Londrina, Brazil. " +
+      "Hourly or daily hire with premium vehicle. " +
+      "Bilingual service in English, Portuguese and Spanish.",
+    path: "/en/executive-driver-londrina",
+    ogImage: "og-en-driver.jpg",
+    ogImageAlt: "Executive Driver Londrina Private Chauffeur",
+  }),
+
+  enCorporate: buildMetadata({
+    title: "Corporate Transportation Londrina | Business Transfer Service",
+    description:
+      "Corporate transportation solutions in Londrina for businesses. " +
+      "Monthly contracts, invoicing and dedicated account management. " +
+      "Premium fleet for executives and corporate guests.",
+    path: "/en/corporate-transfer-londrina",
+    ogImage: "og-en-corporate.jpg",
+    ogImageAlt: "Corporate Transfer Londrina Business Service",
+  }),
+
 } as const
