@@ -68,6 +68,22 @@ const faqItems = [
       "relatório de utilizações e nota fiscal. " +
       "Uma única solicitação pelo WhatsApp ou e-mail organiza todas as viagens do mês.",
   },
+  {
+    question: "Qual o tempo recomendado de antecedência para o transfer de saída?",
+    answer:
+      "Para voos domésticos, recomendamos que o transfer de saída seja agendado para chegar " +
+      "ao Aeroporto de Londrina com 1h30 a 2h de antecedência em relação ao horário do voo. " +
+      "O motorista chega ao endereço de origem 10 minutos antes do horário combinado, " +
+      "garantindo saída tranquila e pontual.",
+  },
+  {
+    question: "O transfer inclui auxílio com a bagagem?",
+    answer:
+      "Sim. O motorista auxilia com o carregamento da bagagem do endereço de origem até o veículo " +
+      "e do veículo até o setor de check-in. " +
+      "Para viagens com bagagem volumosa ou equipamentos especiais, " +
+      "informe no agendamento para confirmarmos o veículo mais adequado.",
+  },
 ]
 
 const breadcrumbSchema = buildBreadcrumbSchema([
@@ -169,6 +185,194 @@ export default function AirportTransferLondrinaPage() {
                   <p style={{ color: "#6B6B6B", fontSize: "0.875rem", lineHeight: 1.65, margin: 0 }}>{s.desc}</p>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+
+        {/* ════════ AEROPORTO DE LONDRINA ════════ */}
+        <section aria-labelledby="aeroporto-ldb-heading" style={{ background: "#0A0A0A", padding: "5rem 1.5rem" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto" }}>
+            <div style={{ width: "48px", height: "1px", background: "#C9A84C", marginBottom: "1.5rem" }} />
+            <h2 id="aeroporto-ldb-heading" style={{ fontSize: "clamp(1.375rem,2.8vw,1.875rem)", fontWeight: 800, color: "#F0F0F0", marginBottom: "1.5rem" }}>
+              Aeroporto Governador José Richa — o que saber
+            </h2>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(340px,1fr))", gap: "2rem", maxWidth: "900px" }}>
+              <div>
+                <p style={{ color: "#A8A8A8", fontSize: "0.95rem", lineHeight: 1.8, marginBottom: "1.25rem" }}>
+                  O Aeroporto Governador José Richa (IATA: LDB) está localizado a 4 quilômetros do centro de Londrina,
+                  na Zona Norte da cidade. Opera voos domésticos regulares para São Paulo (Congonhas e Guarulhos),
+                  Curitiba, Brasília e outros destinos, com operações das companhias Latam, Gol e Azul.
+                </p>
+                <p style={{ color: "#A8A8A8", fontSize: "0.95rem", lineHeight: 1.8 }}>
+                  Por ser um aeroporto de médio porte, o LDB não exige o mesmo tempo de antecedência dos grandes
+                  terminais — check-in para voos domésticos pode ser feito com 1h a 1h30 de antecedência.
+                  Para executivos com passagens de primeira classe ou acesso ao lounge, recomendamos 1h30.
+                </p>
+              </div>
+              <div>
+                <p style={{ color: "#A8A8A8", fontSize: "0.95rem", lineHeight: 1.8, marginBottom: "1.25rem" }}>
+                  O acesso ao aeroporto pela Avenida Saul Elkind é descomplicado fora dos horários de pico.
+                  Para saídas entre 6h e 8h ou entre 17h e 19h, o trânsito no entorno pode acrescentar 10 a 15
+                  minutos ao trajeto — nosso motorista considera esse fator no cálculo do horário de saída.
+                </p>
+                <p style={{ color: "#A8A8A8", fontSize: "0.95rem", lineHeight: 1.8 }}>
+                  Para chegadas de voos com atraso, monitoramos a operação em tempo real. Se o voo atrasar,
+                  o motorista permanece na área de desembarque aguardando — sem cobrança adicional
+                  por tempo de espera dentro do prazo razoável.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ════════ COMO FUNCIONA CHEGADAS E PARTIDAS ════════ */}
+        <section aria-labelledby="operacao-ldb-heading" style={{ background: "#141414", padding: "5rem 1.5rem" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto" }}>
+            <div style={{ width: "48px", height: "1px", background: "#C9A84C", marginBottom: "1.5rem" }} />
+            <h2 id="operacao-ldb-heading" style={{ fontSize: "clamp(1.375rem,2.8vw,1.875rem)", fontWeight: 800, color: "#F0F0F0", marginBottom: "1rem" }}>
+              Como funciona o transfer para chegadas e partidas
+            </h2>
+            <p style={{ color: "#6B6B6B", marginBottom: "2.5rem", maxWidth: "600px" }}>
+              Procedimento detalhado para cada tipo de atendimento no LDB.
+            </p>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(300px,1fr))", gap: "1.5rem", maxWidth: "900px" }}>
+              <div style={{ background: "#1C1C1C", borderRadius: "10px", padding: "1.5rem", border: "1px solid #2A2A2A", borderTop: "3px solid #C9A84C" }}>
+                <h3 style={{ fontWeight: 700, fontSize: "1rem", color: "#F0F0F0", marginBottom: "1rem" }}>🛬 Chegadas (Arrivals)</h3>
+                <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem" }}>
+                  {[
+                    { step: "01", desc: "Informe o número do voo no agendamento" },
+                    { step: "02", desc: "Monitoramos o status do voo em tempo real" },
+                    { step: "03", desc: "Motorista aguarda no saguão com placa personalizada" },
+                    { step: "04", desc: "Auxílio com bagagem e embarque no veículo" },
+                    { step: "05", desc: "Transfer direto ao destino em Londrina" },
+                  ].map(s => (
+                    <div key={s.step} style={{ display: "flex", gap: "0.75rem", alignItems: "flex-start" }}>
+                      <span style={{ background: "#C9A84C", color: "#0A0A0A", fontSize: "0.65rem", fontWeight: 800, padding: "2px 7px", borderRadius: "4px", flexShrink: 0, marginTop: "1px" }}>{s.step}</span>
+                      <p style={{ color: "#A8A8A8", fontSize: "0.85rem", margin: 0 }}>{s.desc}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div style={{ background: "#1C1C1C", borderRadius: "10px", padding: "1.5rem", border: "1px solid #2A2A2A", borderTop: "3px solid rgba(201,168,76,.4)" }}>
+                <h3 style={{ fontWeight: 700, fontSize: "1rem", color: "#F0F0F0", marginBottom: "1rem" }}>🛫 Partidas (Departures)</h3>
+                <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem" }}>
+                  {[
+                    { step: "01", desc: "Informe endereço de origem e horário do voo" },
+                    { step: "02", desc: "Calculamos o horário ideal de saída" },
+                    { step: "03", desc: "Motorista chega 10 min antes do combinado" },
+                    { step: "04", desc: "Auxílio com bagagem até o check-in" },
+                    { step: "05", desc: "Chegada ao aeroporto com folga garantida" },
+                  ].map(s => (
+                    <div key={s.step} style={{ display: "flex", gap: "0.75rem", alignItems: "flex-start" }}>
+                      <span style={{ background: "rgba(201,168,76,.3)", color: "#C9A84C", fontSize: "0.65rem", fontWeight: 800, padding: "2px 7px", borderRadius: "4px", flexShrink: 0, marginTop: "1px" }}>{s.step}</span>
+                      <p style={{ color: "#A8A8A8", fontSize: "0.85rem", margin: 0 }}>{s.desc}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ════════ PARA EMPRESAS ════════ */}
+        <section aria-labelledby="empresas-ldb-heading" style={{ background: "#0A0A0A", padding: "5rem 1.5rem" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto" }}>
+            <div style={{ width: "48px", height: "1px", background: "#C9A84C", marginBottom: "1.5rem" }} />
+            <h2 id="empresas-ldb-heading" style={{ fontSize: "clamp(1.375rem,2.8vw,1.875rem)", fontWeight: 800, color: "#F0F0F0", marginBottom: "1.5rem" }}>
+              Transfer aeroporto para empresas em Londrina
+            </h2>
+            <div style={{ maxWidth: "780px" }}>
+              <p style={{ color: "#A8A8A8", fontSize: "0.95rem", lineHeight: 1.8, marginBottom: "1.25rem" }}>
+                Empresas que recebem visitas regulares de parceiros, fornecedores ou clientes utilizam o transfer
+                aeroporto como parte da gestão de hospitalidade corporativa. O visitante desce do avião e já encontra
+                o motorista aguardando com o nome da empresa — impressão imediata de profissionalismo e organização.
+              </p>
+              <p style={{ color: "#A8A8A8", fontSize: "0.95rem", lineHeight: 1.8, marginBottom: "1.25rem" }}>
+                Para o departamento administrativo, o contrato de transfer aeroporto com faturamento mensal
+                elimina a necessidade de reembolsar cada corrida individualmente. Todas as viagens do período
+                são consolidadas em um único relatório com nota fiscal, pronto para a aprovação do financeiro.
+              </p>
+              <p style={{ color: "#A8A8A8", fontSize: "0.95rem", lineHeight: 1.8 }}>
+                O serviço também atende executivos da própria empresa que viajam com frequência.
+                Ao invés de deixar o carro no estacionamento do aeroporto por dias ou depender de familiares,
+                o executivo agenda o transfer e tem o veículo esperando na chegada — independente do horário do voo.
+              </p>
+            </div>
+          </div>
+        </section>
+
+
+        {/* ════════ POR QUE USAR TRANSFER PRIVADO NO AEROPORTO ════════ */}
+        <section aria-labelledby="porque-at-heading" style={{ background: "#141414", padding: "5rem 1.5rem" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto" }}>
+            <div style={{ width: "48px", height: "1px", background: "#C9A84C", marginBottom: "1.5rem" }} />
+            <h2 id="porque-at-heading" style={{ fontSize: "clamp(1.375rem,2.8vw,1.875rem)", fontWeight: 800, color: "#F0F0F0", marginBottom: "1rem" }}>
+              Por que usar transfer privado no Aeroporto de Londrina
+            </h2>
+            <p style={{ color: "#6B6B6B", marginBottom: "2rem", maxWidth: "600px" }}>
+              Comparativo direto entre o transfer executivo e as alternativas mais comuns.
+            </p>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(300px,1fr))", gap: "1.25rem", maxWidth: "900px" }}>
+              {[
+                { titulo: "Transfer executivo vs carro próprio", pontos: ["Motorista dirige enquanto você descansa ou trabalha", "Sem custo de estacionamento por dias (R$30–60/dia no LDB)", "Sem risco de voltar após viagem longa ao volante", "Veículo aguarda exatamente onde combinado"] },
+                { titulo: "Transfer executivo vs aplicativo de carona", pontos: ["Motorista confirmado com antecedência — sem cancelamentos", "Veículo premium, não carro popular aleatório", "Monitoramento de voo em tempo real incluído", "Nota fiscal e faturamento corporativo disponíveis"] },
+                { titulo: "Transfer executivo vs ônibus coletivo", pontos: ["Porta a porta sem paradas intermediárias", "Privacidade total para chamadas e descanso", "Sem restrição de bagagem ou horário fixo", "Atendimento personalizado em inglês ou espanhol"] },
+              ].map(item => (
+                <div key={item.titulo} style={{ background: "#1C1C1C", borderRadius: "8px", padding: "1.5rem", border: "1px solid #2A2A2A" }}>
+                  <h3 style={{ fontWeight: 700, fontSize: "0.875rem", color: "#C9A84C", marginBottom: "0.875rem" }}>{item.titulo}</h3>
+                  <div style={{ display: "flex", flexDirection: "column", gap: "0.5rem" }}>
+                    {item.pontos.map(p => (
+                      <div key={p} style={{ display: "flex", gap: "0.5rem", alignItems: "flex-start" }}>
+                        <span style={{ color: "#50c878", flexShrink: 0, fontSize: "0.75rem", marginTop: "3px" }}>✓</span>
+                        <p style={{ color: "#A8A8A8", fontSize: "0.825rem", lineHeight: 1.55, margin: 0 }}>{p}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+
+        {/* ════════ DICAS E CONEXÕES ════════ */}
+        <section aria-labelledby="dicas-ldb-heading" style={{ background: "#0A0A0A", padding: "5rem 1.5rem" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto" }}>
+            <div style={{ width: "48px", height: "1px", background: "#C9A84C", marginBottom: "1.5rem" }} />
+            <h2 id="dicas-ldb-heading" style={{ fontSize: "clamp(1.375rem,2.8vw,1.875rem)", fontWeight: 800, color: "#F0F0F0", marginBottom: "1.5rem" }}>
+              Transfer LDB para conexões e viagens internacionais
+            </h2>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(340px,1fr))", gap: "2rem", maxWidth: "900px" }}>
+              <div>
+                <h3 style={{ fontWeight: 700, fontSize: "1rem", color: "#C9A84C", marginBottom: "0.75rem" }}>Voos com escala em Guarulhos</h3>
+                <p style={{ color: "#A8A8A8", fontSize: "0.95rem", lineHeight: 1.8, marginBottom: "1rem" }}>
+                  Executivos que embarcam em Londrina com conexão no Aeroporto de Guarulhos (GRU) para voos
+                  internacionais precisam de um cálculo cuidadoso de tempo. O transfer de Londrina ao LDB
+                  deve garantir chegada com pelo menos 1h30 antes do voo doméstico, que normalmente tem
+                  duração de 50 a 55 minutos até Guarulhos.
+                </p>
+                <p style={{ color: "#A8A8A8", fontSize: "0.95rem", lineHeight: 1.8 }}>
+                  Para quem prefere ir diretamente ao GRU por terra — especialmente com bagagem volumosa
+                  ou para evitar a conexão aérea — nosso serviço de transfer Londrina-Guarulhos cobre
+                  os 470 km em aproximadamente 5 horas e meia com atendimento nos três terminais.
+                </p>
+              </div>
+              <div>
+                <h3 style={{ fontWeight: 700, fontSize: "1rem", color: "#C9A84C", marginBottom: "0.75rem" }}>Horários de pico no LDB</h3>
+                <p style={{ color: "#A8A8A8", fontSize: "0.95rem", lineHeight: 1.8, marginBottom: "1rem" }}>
+                  O Aeroporto Governador José Richa tem maior movimento entre 6h e 9h (embarques para SP)
+                  e entre 18h e 21h (chegadas de São Paulo). Para embarques nesse horário, recomendamos
+                  sair com 30 a 45 minutos extras de antecedência para absorver eventuais congestionamentos
+                  na Avenida Saul Elkind, principal acesso ao aeroporto.
+                </p>
+                <p style={{ color: "#A8A8A8", fontSize: "0.95rem", lineHeight: 1.8 }}>
+                  Para executivos que chegam com frequência em voos noturnos — especialmente retornos de
+                  São Paulo entre 22h e 23h — o transfer noturno garante veículo esperando na chegada
+                  independente do horário, sem a incerteza de encontrar opções de transporte disponíveis
+                  nesse período.
+                </p>
+              </div>
             </div>
           </div>
         </section>

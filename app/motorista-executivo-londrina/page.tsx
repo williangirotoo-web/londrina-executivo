@@ -64,6 +64,23 @@ const faqItems = [
       "adequado para executivos estrangeiros em visita a Londrina. " +
       "Para visitantes de países hispânicos, também oferecemos atendimento em espanhol.",
   },
+  {
+    question: "É possível contratar o motorista executivo para viagens de vários dias?",
+    answer:
+      "Sim. Para agendas que envolvem múltiplos dias em São Paulo, Curitiba ou outra cidade, " +
+      "disponibilizamos o motorista em regime de diárias com hospedagem por conta do contratante. " +
+      "Ideal para executivos em missões comerciais prolongadas ou para delegações em eventos de múltiplos dias.",
+  },
+  {
+    question: "Qual a diferença entre motorista executivo e transfer executivo?",
+    answer:
+      "No transfer executivo, o motorista realiza um deslocamento pontual de origem a destino — " +
+      "como de Londrina ao aeroporto ou a São Paulo. " +
+      "No serviço de motorista executivo, o profissional fica à disposição do contratante " +
+      "durante um período definido (4h, 8h ou 12h), aguardando entre compromissos " +
+      "e conduzindo conforme a agenda do executivo. " +
+      "São serviços distintos com aplicações diferentes.",
+  },
 ]
 
 const breadcrumbSchema = buildBreadcrumbSchema([
@@ -169,6 +186,174 @@ export default function MotoristaExecutivoLondrinaPage() {
                   </a>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+
+        {/* ════════ O QUE É ════════ */}
+        <section aria-labelledby="oque-me-heading" style={{ background: "#0A0A0A", padding: "5rem 1.5rem" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto" }}>
+            <div style={{ width: "48px", height: "1px", background: "#C9A84C", marginBottom: "1.5rem" }} />
+            <h2 id="oque-me-heading" style={{ fontSize: "clamp(1.375rem,2.8vw,1.875rem)", fontWeight: 800, color: "#F0F0F0", marginBottom: "1.5rem" }}>
+              O que é o serviço de motorista executivo
+            </h2>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(340px,1fr))", gap: "2rem", maxWidth: "900px" }}>
+              <div>
+                <p style={{ color: "#A8A8A8", fontSize: "0.95rem", lineHeight: 1.8, marginBottom: "1.25rem" }}>
+                  O serviço de motorista executivo disponibiliza um profissional habilitado, com veículo premium,
+                  à disposição do contratante por um período definido — meio período, diária ou diária estendida.
+                  Durante esse tempo, o motorista conduz conforme a agenda do executivo, aguarda entre compromissos
+                  e cuida de toda a logística de deslocamento.
+                </p>
+                <p style={{ color: "#A8A8A8", fontSize: "0.95rem", lineHeight: 1.8 }}>
+                  A principal vantagem em relação ao transfer pontual é a flexibilidade: não há horário fixo de
+                  término nem limitação de destinos. Se a reunião se estender, o motorista aguarda. Se surgir
+                  um compromisso adicional, o deslocamento já está garantido. Para executivos com agenda densa
+                  em Londrina ou em outra cidade, esse modelo elimina a gestão de transporte durante o dia.
+                </p>
+              </div>
+              <div>
+                <p style={{ color: "#A8A8A8", fontSize: "0.95rem", lineHeight: 1.8, marginBottom: "1.25rem" }}>
+                  O serviço é ideal para diretores com múltiplos compromissos no mesmo dia, para visitas técnicas
+                  entre unidades e clientes, e para executivos em deslocamento a outras cidades que precisam
+                  de mobilidade local após chegarem ao destino.
+                </p>
+                <p style={{ color: "#A8A8A8", fontSize: "0.95rem", lineHeight: 1.8 }}>
+                  Para empresas, o motorista executivo resolve a recepção de visitantes de alto nível
+                  que chegam a Londrina e precisam ser conduzidos entre hotel, empresa, fornecedores e parceiros
+                  ao longo do dia — com o mesmo motorista e o mesmo veículo, sem necessidade de múltiplos agendamentos.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ════════ AGENDA TÍPICA ════════ */}
+        <section aria-labelledby="agenda-me-heading" style={{ background: "#141414", padding: "5rem 1.5rem" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto" }}>
+            <div style={{ width: "48px", height: "1px", background: "#C9A84C", marginBottom: "1.5rem" }} />
+            <h2 id="agenda-me-heading" style={{ fontSize: "clamp(1.375rem,2.8vw,1.875rem)", fontWeight: 800, color: "#F0F0F0", marginBottom: "1rem" }}>
+              Como é uma agenda com motorista executivo em Londrina
+            </h2>
+            <p style={{ color: "#6B6B6B", marginBottom: "2.5rem", maxWidth: "600px" }}>
+              Exemplos reais de como o serviço se encaixa na rotina de diferentes perfis.
+            </p>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(280px,1fr))", gap: "1.25rem" }}>
+              {[
+                { icon: "💼", perfil: "Diretor com reuniões em Londrina", agenda: "08h: saída do hotel → cliente A. 10h: aguarda 45min. 11h: parceiro B. 14h: sede da empresa. 17h: aeroporto LDB. Motorista disponível durante todo o trajeto sem nenhum agendamento adicional." },
+                { icon: "🌍", perfil: "Executivo estrangeiro em visita", agenda: "Chegada no GRU → transfer até Londrina → hotel. Dia seguinte: motorista disponível das 8h às 18h para visitas técnicas à planta e reuniões com a diretoria. Comunicação em inglês durante todo o serviço." },
+                { icon: "🤝", perfil: "Sócio em negociação em SP", agenda: "Saída de Londrina às 5h → reuniões na Paulista das 10h às 16h → motorista aguarda → retorno a Londrina. Um único motorista para todo o trajeto, ida e volta, com as paradas necessárias." },
+                { icon: "🏥", perfil: "Paciente em tratamento em SP", agenda: "Transfer Londrina-SP, motorista aguarda durante consulta e exames, conduz para hotel ou retorna a Londrina. Agenda médica imprevisível — o motorista acompanha sem custo de reagendamento." },
+              ].map(item => (
+                <div key={item.perfil} style={{ background: "#1C1C1C", borderRadius: "8px", padding: "1.25rem", border: "1px solid #2A2A2A" }}>
+                  <span style={{ fontSize: "1.5rem", display: "block", marginBottom: "0.5rem" }}>{item.icon}</span>
+                  <h3 style={{ fontWeight: 700, fontSize: "0.875rem", color: "#C9A84C", marginBottom: "0.5rem" }}>{item.perfil}</h3>
+                  <p style={{ color: "#6B6B6B", fontSize: "0.825rem", lineHeight: 1.7, margin: 0 }}>{item.agenda}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ════════ PADRÃO DO MOTORISTA ════════ */}
+        <section aria-labelledby="padrao-me-heading" style={{ background: "#0A0A0A", padding: "5rem 1.5rem" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto" }}>
+            <div style={{ width: "48px", height: "1px", background: "#C9A84C", marginBottom: "1.5rem" }} />
+            <h2 id="padrao-me-heading" style={{ fontSize: "clamp(1.375rem,2.8vw,1.875rem)", fontWeight: 800, color: "#F0F0F0", marginBottom: "1.5rem" }}>
+              Padrão de atendimento do motorista executivo
+            </h2>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(260px,1fr))", gap: "1.5rem", maxWidth: "900px" }}>
+              {[
+                { icon: "🎩", titulo: "Apresentação formal", desc: "Traje social completo em todos os atendimentos. O motorista representa a empresa do contratante em cada corrida." },
+                { icon: "🗣️", titulo: "Comunicação bilíngue", desc: "Atendimento em português, inglês e espanhol. Para visitantes estrangeiros, a comunicação começa no aeroporto sem fricção." },
+                { icon: "🔒", titulo: "Discrição corporativa", desc: "Reuniões, negociações e informações sensíveis ficam dentro do veículo. Treinamento para o ambiente executivo." },
+                { icon: "⏱️", titulo: "Pontualidade calculada", desc: "Chegada ao local combinado com margem de segurança. Em caso de imprevisto no trânsito, o contratante é avisado proativamente." },
+                { icon: "🚗", titulo: "Veículo premium incluso", desc: "Toyota Corolla Cross, Jeep Compass ou VW T-Cross — climatizado, higienizado e revisado para cada atendimento." },
+                { icon: "📱", titulo: "Contato direto com o motorista", desc: "Após a confirmação do agendamento, o contratante recebe o contato direto do motorista para comunicação durante o serviço." },
+              ].map(b => (
+                <div key={b.titulo} style={{ display: "flex", gap: "1rem", alignItems: "flex-start" }}>
+                  <div style={{ width: "44px", height: "44px", borderRadius: "8px", background: "rgba(201,168,76,.1)", border: "1px solid rgba(201,168,76,.2)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1.25rem", flexShrink: 0 }}>{b.icon}</div>
+                  <div>
+                    <h3 style={{ fontWeight: 700, fontSize: "0.875rem", color: "#F0F0F0", marginBottom: "0.3rem" }}>{b.titulo}</h3>
+                    <p style={{ color: "#6B6B6B", fontSize: "0.825rem", lineHeight: 1.65, margin: 0 }}>{b.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+
+        {/* ════════ QUANDO CONTRATAR ════════ */}
+        <section aria-labelledby="quando-me-heading" style={{ background: "#141414", padding: "5rem 1.5rem" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto" }}>
+            <div style={{ width: "48px", height: "1px", background: "#C9A84C", marginBottom: "1.5rem" }} />
+            <h2 id="quando-me-heading" style={{ fontSize: "clamp(1.375rem,2.8vw,1.875rem)", fontWeight: 800, color: "#F0F0F0", marginBottom: "1rem" }}>
+              Quando contratar o motorista executivo
+            </h2>
+            <p style={{ color: "#6B6B6B", marginBottom: "2.5rem", maxWidth: "600px" }}>
+              Situações em que o serviço por horas supera qualquer outra opção de deslocamento.
+            </p>
+            <div style={{ maxWidth: "780px" }}>
+              <p style={{ color: "#A8A8A8", fontSize: "0.95rem", lineHeight: 1.8, marginBottom: "1.25rem" }}>
+                O motorista executivo por horas é a escolha certa quando a agenda é imprevisível ou intensa.
+                Enquanto um transfer pontual tem origem e destino fixos, o motorista executivo segue o ritmo
+                do contratante — se a reunião se estende, ele aguarda; se surge um compromisso adicional,
+                o veículo já está disponível.
+              </p>
+              <p style={{ color: "#A8A8A8", fontSize: "0.95rem", lineHeight: 1.8, marginBottom: "1.25rem" }}>
+                Para executivos com múltiplas reuniões em Londrina no mesmo dia, o serviço elimina
+                a preocupação com estacionamento, o custo do táxi entre compromissos e o desgaste de
+                conduzir sob pressão de horário. O foco fica inteiramente na agenda.
+              </p>
+              <p style={{ color: "#A8A8A8", fontSize: "0.95rem", lineHeight: 1.8, marginBottom: "1.25rem" }}>
+                Para empresas que recebem visitantes de outras cidades, o motorista executivo por diária
+                resolve a mobilidade completa do visitante: do hotel ao escritório, às visitas técnicas,
+                ao almoço de negócios e ao aeroporto no final do dia. Um único contato, um único motorista,
+                toda a logística resolvida.
+              </p>
+              <p style={{ color: "#A8A8A8", fontSize: "0.95rem", lineHeight: 1.8 }}>
+                O serviço também é utilizado por profissionais liberais — médicos, advogados e consultores
+                que precisam de mobilidade em São Paulo durante visitas à capital — e por famílias
+                que acompanham pacientes em tratamentos em hospitais especializados fora de Londrina.
+                Em todos esses casos, a tranquilidade de ter o motorista aguardando não tem preço.
+              </p>
+            </div>
+          </div>
+        </section>
+
+
+        {/* ════════ MOTORISTA VS TRANSFER ════════ */}
+        <section aria-labelledby="dif-me-heading" style={{ background: "#0A0A0A", padding: "5rem 1.5rem" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto" }}>
+            <div style={{ width: "48px", height: "1px", background: "#C9A84C", marginBottom: "1.5rem" }} />
+            <h2 id="dif-me-heading" style={{ fontSize: "clamp(1.375rem,2.8vw,1.875rem)", fontWeight: 800, color: "#F0F0F0", marginBottom: "1.5rem" }}>
+              Motorista executivo por horas ou transfer pontual — qual escolher
+            </h2>
+            <div style={{ maxWidth: "780px" }}>
+              <p style={{ color: "#A8A8A8", fontSize: "0.95rem", lineHeight: 1.8, marginBottom: "1.25rem" }}>
+                A escolha entre o motorista executivo por horas e o transfer pontual depende da natureza da agenda.
+                Para um deslocamento com origem e destino fixos — como ir ao aeroporto ou a uma reunião em outra cidade —
+                o transfer executivo é a opção mais objetiva e econômica.
+              </p>
+              <p style={{ color: "#A8A8A8", fontSize: "0.95rem", lineHeight: 1.8, marginBottom: "1.25rem" }}>
+                Já quando a agenda tem múltiplos compromissos, horários imprevisíveis ou necessidade de retorno
+                no mesmo período, o motorista por horas entrega mais valor. O profissional aguarda nos intervalos,
+                realiza deslocamentos intermediários e finaliza o serviço no horário acordado — sem a necessidade
+                de agendar corridas separadas para cada trecho.
+              </p>
+              <p style={{ color: "#A8A8A8", fontSize: "0.95rem", lineHeight: 1.8, marginBottom: "1.25rem" }}>
+                Para executivos que viajam a São Paulo e precisam de mobilidade local durante a visita — reuniões
+                na Paulista pela manhã, almoço em Pinheiros, apresentação na Faria Lima à tarde — o motorista
+                por horas contratado em São Paulo garante conforto e pontualidade durante toda a agenda,
+                sem o custo e o desgaste de usar aplicativos de carona em cada trecho.
+              </p>
+              <p style={{ color: "#A8A8A8", fontSize: "0.95rem", lineHeight: 1.8 }}>
+                Nossa equipe ajuda a identificar a modalidade mais adequada para cada demanda.
+                Entre em contato com os detalhes da sua agenda e sugerimos a opção que melhor
+                atende ao seu objetivo com o melhor custo-benefício.
+              </p>
             </div>
           </div>
         </section>

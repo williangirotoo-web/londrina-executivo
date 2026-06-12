@@ -249,7 +249,7 @@ export default function LondrinaSaoPauloPage() {
             </h2>
             <div style={{ maxWidth: "780px", display: "flex", flexDirection: "column", gap: "1rem" }}>
               <p style={{ color: "#A8A8A8", fontSize: "0.95rem", lineHeight: 1.8 }}>
-                O transfer executivo de Londrina para São Paulo é um dos serviços de maior demanda no norte do Paraná.
+                O transfer executivo Londrina–São Paulo é um dos serviços de maior demanda no norte do Paraná.
                 Com 450 quilômetros de distância pela Rodovia Castelo Branco, o percurso conecta Londrina
                 ao principal centro financeiro e de negócios do Brasil — sem baldeações, sem aeroportos,
                 sem espera em fila.
@@ -410,7 +410,7 @@ export default function LondrinaSaoPauloPage() {
               <p style={{ color: "#A8A8A8", fontSize: "0.875rem", lineHeight: 1.75, margin: 0 }}>
                 O voo Londrina-Congonhas dura cerca de 55 minutos, mas o processo completo — deslocamento ao aeroporto de Londrina,
                 check-in, embarque, desembarque e deslocamento ao destino em SP — facilmente soma quatro horas.
-                O transfer executivo direto cobre o mesmo trajeto porta a porta em cinco horas, sem filas, sem restrições de bagagem
+                O transfer Londrina São Paulo cobre o mesmo trajeto porta a porta em cinco horas, sem filas, sem restrições de bagagem
                 e com saída do seu endereço em Londrina. Para compromissos que não exigem chegada de manhã cedo,
                 o transfer é mais prático e, em muitos casos, mais econômico.
               </p>

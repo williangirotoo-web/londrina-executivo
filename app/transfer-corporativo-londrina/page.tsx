@@ -68,6 +68,22 @@ const faqItems = [
       "Londrina → Guarulhos (470 km) e Londrina → Curitiba (398 km). " +
       "Para outros destinos, consulte disponibilidade e orçamento pelo WhatsApp.",
   },
+  {
+    question: "Como funciona a logística para receber visitantes de fora do Brasil?",
+    answer:
+      "Para visitantes internacionais que chegam ao Aeroporto de Guarulhos (GRU), " +
+      "realizamos o transfer completo do aeroporto até Londrina, com motorista bilíngue " +
+      "em inglês ou espanhol e placa personalizada na chegada. " +
+      "O serviço é contratado diretamente pela empresa anfitriã, com nota fiscal incluída.",
+  },
+  {
+    question: "Qual é o prazo para receber a nota fiscal após a viagem?",
+    answer:
+      "Para corridas avulsas, a nota fiscal é emitida em até dois dias úteis após a viagem. " +
+      "Para empresas com contrato mensal, o pacote de notas fiscais e o relatório consolidado " +
+      "são enviados até o quinto dia útil do mês seguinte, " +
+      "facilitando o fechamento contábil do departamento financeiro.",
+  },
 ]
 
 const breadcrumbSchema = buildBreadcrumbSchema([
@@ -171,6 +187,156 @@ export default function TransferCorporativoLondrinaPage() {
                   <p style={{ color: "#6B6B6B", fontSize: "0.875rem", lineHeight: 1.65, margin: 0 }}>{c.desc}</p>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+
+        {/* ════════ O QUE É TRANSFER CORPORATIVO ════════ */}
+        <section aria-labelledby="oque-corp-heading" style={{ background: "#0A0A0A", padding: "5rem 1.5rem" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto" }}>
+            <div style={{ width: "48px", height: "1px", background: "#C9A84C", marginBottom: "1.5rem" }} />
+            <h2 id="oque-corp-heading" style={{ fontSize: "clamp(1.375rem,2.8vw,1.875rem)", fontWeight: 800, color: "#F0F0F0", marginBottom: "1.5rem" }}>
+              O que é transfer corporativo e por que empresas contratam
+            </h2>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(340px,1fr))", gap: "2rem", maxWidth: "900px" }}>
+              <div>
+                <p style={{ color: "#A8A8A8", fontSize: "0.95rem", lineHeight: 1.8, marginBottom: "1.25rem" }}>
+                  Transfer corporativo é o serviço de transporte executivo contratado por empresas para mobilizar
+                  colaboradores, diretores e visitantes com padrão e previsibilidade. Diferente do reembolso individual
+                  de transporte, o transfer corporativo centraliza toda a logística em um único fornecedor —
+                  com nota fiscal, relatório mensal e faturamento consolidado para o departamento financeiro.
+                </p>
+                <p style={{ color: "#A8A8A8", fontSize: "0.95rem", lineHeight: 1.8 }}>
+                  Para empresas que recebem clientes e parceiros externos, o transfer corporativo é também uma ferramenta
+                  de representação: o visitante é recebido com motorista uniformizado, veículo premium e atenção
+                  que transmite o nível de serviço da empresa antes mesmo da reunião começar.
+                </p>
+              </div>
+              <div>
+                <p style={{ color: "#A8A8A8", fontSize: "0.95rem", lineHeight: 1.8, marginBottom: "1.25rem" }}>
+                  No norte do Paraná, onde o agronegócio, a indústria e o setor jurídico concentram empresas de médio
+                  e grande porte, o transfer corporativo atende uma demanda crescente: executivos que viajam
+                  regularmente para São Paulo e Guarulhos, equipes comerciais em feiras e eventos, e visitantes
+                  internacionais que chegam ao GRU e precisam chegar a Londrina com conforto e segurança.
+                </p>
+                <p style={{ color: "#A8A8A8", fontSize: "0.95rem", lineHeight: 1.8 }}>
+                  A contratação via contrato mensal elimina o processo de aprovação individual para cada viagem —
+                  o responsável administrativo agenda pelo WhatsApp e o serviço é executado no padrão acordado,
+                  sem negociação por corrida.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ════════ QUANDO CONTRATAR ════════ */}
+        <section aria-labelledby="quando-corp-heading" style={{ background: "#141414", padding: "5rem 1.5rem" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto" }}>
+            <div style={{ width: "48px", height: "1px", background: "#C9A84C", marginBottom: "1.5rem" }} />
+            <h2 id="quando-corp-heading" style={{ fontSize: "clamp(1.375rem,2.8vw,1.875rem)", fontWeight: 800, color: "#F0F0F0", marginBottom: "1rem" }}>
+              Situações em que o transfer corporativo faz diferença
+            </h2>
+            <p style={{ color: "#6B6B6B", marginBottom: "2.5rem", maxWidth: "600px" }}>
+              Casos reais em que empresas de Londrina utilizam o serviço regularmente.
+            </p>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(280px,1fr))", gap: "1.25rem" }}>
+              {[
+                { icon: "✈️", titulo: "Recepção de visitantes no aeroporto", desc: "Clientes, parceiros e fornecedores chegam ao aeroporto de Londrina ou ao GRU e são recebidos com placa personalizada. Primeira impressão gerenciada pela empresa, não pelo acaso." },
+                { icon: "🏢", titulo: "Deslocamentos internos e entre unidades", desc: "Diretores e equipes que se movem entre plantas, escritórios e clientes em Londrina e região metropolitana, com motorista disponível durante toda a agenda." },
+                { icon: "🤝", titulo: "Visitas comerciais e negociações", desc: "Reuniões em São Paulo, Curitiba ou Guarulhos com executivos de outras empresas — o transporte premium reforça a credibilidade da proposta antes de qualquer palavra." },
+                { icon: "🌍", titulo: "Executivos internacionais em Londrina", desc: "Visitantes de origem americana, europeia ou asiática chegam ao GRU e seguem para Londrina com motorista bilíngue. Zero barreira de comunicação no trajeto." },
+                { icon: "📋", titulo: "Eventos, feiras e conferências", desc: "Logística de transporte para equipes que participam de eventos em SP ou no Paraná — sem preocupação com estacionamento, combustível ou fadiga de direção." },
+                { icon: "💳", titulo: "Contratos com faturamento mensal", desc: "Para empresas com demanda regular, um contrato mensal elimina a aprovação individual de despesas e centraliza o relatório para a contabilidade." },
+              ].map(item => (
+                <div key={item.titulo} style={{ background: "#1C1C1C", borderRadius: "8px", padding: "1.25rem", border: "1px solid #2A2A2A", display: "flex", gap: "0.875rem" }}>
+                  <span style={{ fontSize: "1.5rem", flexShrink: 0 }}>{item.icon}</span>
+                  <div>
+                    <h3 style={{ fontWeight: 700, fontSize: "0.875rem", color: "#F0F0F0", marginBottom: "0.35rem" }}>{item.titulo}</h3>
+                    <p style={{ color: "#6B6B6B", fontSize: "0.825rem", lineHeight: 1.65, margin: 0 }}>{item.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ════════ SETORES ATENDIDOS ════════ */}
+        <section aria-labelledby="setores-corp-heading" style={{ background: "#0A0A0A", padding: "5rem 1.5rem" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto" }}>
+            <div style={{ width: "48px", height: "1px", background: "#C9A84C", marginBottom: "1.5rem" }} />
+            <h2 id="setores-corp-heading" style={{ fontSize: "clamp(1.375rem,2.8vw,1.875rem)", fontWeight: 800, color: "#F0F0F0", marginBottom: "1rem" }}>
+              Setores que mais utilizam transfer corporativo em Londrina
+            </h2>
+            <p style={{ color: "#6B6B6B", marginBottom: "2.5rem", maxWidth: "600px" }}>
+              Cada setor tem necessidades específicas — atendemos todas com o mesmo padrão de serviço.
+            </p>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(300px,1fr))", gap: "1.5rem", maxWidth: "900px" }}>
+              {[
+                { setor: "🌾 Agronegócio", desc: "Cooperativas como Coamo e Cocamar têm diretores que viajam frequentemente para São Paulo e Guarulhos. O transfer corporativo com faturamento mensal elimina a gestão individual de reembolso de despesas de transporte." },
+                { setor: "⚖️ Jurídico e Advocacia", desc: "Escritórios de advocacia de Londrina com clientes em outras praças utilizam o transfer para audiências em Curitiba e reuniões em SP. Pontualidade é mandatória — atrasos têm custo jurídico real." },
+                { setor: "🏥 Saúde", desc: "Hospitais, clínicas e distribuidoras farmacêuticas recebem médicos, representantes e executivos com regularidade. O transfer corporativo garante recepção profissional na chegada ao aeroporto local." },
+                { setor: "🏭 Indústria e Distribuição", desc: "Indústrias do norte do Paraná com fornecedores em SP utilizam o transfer para visitas técnicas e negociações. O relatório mensal de viagens simplifica a prestação de contas para o financeiro." },
+              ].map(item => (
+                <div key={item.setor} style={{ background: "#141414", borderRadius: "8px", padding: "1.5rem", border: "1px solid #2A2A2A" }}>
+                  <h3 style={{ fontWeight: 700, fontSize: "0.9rem", color: "#C9A84C", marginBottom: "0.5rem" }}>{item.setor}</h3>
+                  <p style={{ color: "#6B6B6B", fontSize: "0.875rem", lineHeight: 1.7, margin: 0 }}>{item.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ════════ COMO FUNCIONA O CONTRATO ════════ */}
+        <section aria-labelledby="contrato-corp-heading" style={{ background: "#141414", padding: "5rem 1.5rem" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto" }}>
+            <div style={{ width: "48px", height: "1px", background: "#C9A84C", marginBottom: "1.5rem" }} />
+            <h2 id="contrato-corp-heading" style={{ fontSize: "clamp(1.375rem,2.8vw,1.875rem)", fontWeight: 800, color: "#F0F0F0", marginBottom: "1.5rem" }}>
+              Como funciona o contrato corporativo
+            </h2>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(280px,1fr))", gap: "1.25rem", maxWidth: "900px" }}>
+              {[
+                { num: "01", titulo: "Solicite a proposta", desc: "Entre em contato pelo WhatsApp informando o porte da empresa, as rotas mais frequentes e o volume mensal estimado de viagens." },
+                { num: "02", titulo: "Receba a proposta personalizada", desc: "Elaboramos uma proposta com os valores por rota, condições de faturamento e SLA de atendimento para o perfil da sua empresa." },
+                { num: "03", titulo: "Ativação e operação", desc: "Com o contrato firmado, todas as viagens são agendadas via WhatsApp pelo responsável administrativo. Confirmação em até 30 minutos." },
+                { num: "04", titulo: "Relatório e nota fiscal mensal", desc: "No início de cada mês, enviamos o relatório de viagens do período com data, rota, passageiro e valor. Nota fiscal emitida no prazo acordado." },
+              ].map(p => (
+                <div key={p.num} style={{ background: "#1C1C1C", borderRadius: "8px", padding: "1.25rem", border: "1px solid #2A2A2A" }}>
+                  <p style={{ fontSize: "1.5rem", fontWeight: 900, color: "rgba(201,168,76,.3)", marginBottom: "0.5rem", fontFamily: "Georgia,serif" }}>{p.num}</p>
+                  <h3 style={{ fontWeight: 700, fontSize: "0.875rem", color: "#F0F0F0", marginBottom: "0.35rem" }}>{p.titulo}</h3>
+                  <p style={{ color: "#6B6B6B", fontSize: "0.825rem", lineHeight: 1.6, margin: 0 }}>{p.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+
+        {/* ════════ VANTAGENS DO CONTRATO MENSAL ════════ */}
+        <section aria-labelledby="contrato-vant-heading" style={{ background: "#0A0A0A", padding: "5rem 1.5rem" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto" }}>
+            <div style={{ width: "48px", height: "1px", background: "#C9A84C", marginBottom: "1.5rem" }} />
+            <h2 id="contrato-vant-heading" style={{ fontSize: "clamp(1.375rem,2.8vw,1.875rem)", fontWeight: 800, color: "#F0F0F0", marginBottom: "1.5rem" }}>
+              Vantagens do contrato corporativo mensal
+            </h2>
+            <div style={{ maxWidth: "780px" }}>
+              <p style={{ color: "#A8A8A8", fontSize: "0.95rem", lineHeight: 1.8, marginBottom: "1.25rem" }}>
+                Empresas que contratam transfer executivo de forma recorrente — pelo menos quatro a seis viagens
+                por mês — se beneficiam de um contrato corporativo com faturamento mensal. O processo é simples:
+                a empresa designa um responsável pelo agendamento, que solicita as viagens via WhatsApp com os dados
+                do passageiro, origem, destino e horário.
+              </p>
+              <p style={{ color: "#A8A8A8", fontSize: "0.95rem", lineHeight: 1.8, marginBottom: "1.25rem" }}>
+                O relatório mensal enviado ao departamento financeiro inclui: data e hora de cada viagem,
+                nome do passageiro, rota realizada, valor individual e total do período.
+                Isso elimina o processo de reembolso individual, onde cada colaborador precisa guardar recibo
+                e solicitar devolução — um processo que consome tempo do RH e do financeiro.
+              </p>
+              <p style={{ color: "#A8A8A8", fontSize: "0.95rem", lineHeight: 1.8 }}>
+                Para empresas que precisam comprovar despesas de transporte para fins fiscais ou de auditoria,
+                a nota fiscal centralizada e o relatório detalhado fornecem toda a documentação necessária
+                de forma organizada, sem esforço adicional da equipe interna.
+              </p>
             </div>
           </div>
         </section>
