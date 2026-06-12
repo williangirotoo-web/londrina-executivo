@@ -14,29 +14,35 @@ const WA_URL = "https://wa.me/5544998913040?text=Ol%C3%A1!%20Gostaria%20de%20sol
 const EN_URL = "/en"
 
 const rotasLinks = [
-  { href: "/londrina-guarulhos",      label: "Londrina → Guarulhos (GRU)" },
-  { href: "/londrina-sao-paulo",      label: "Londrina → São Paulo" },
-  { href: "/londrina-maringa",        label: "Londrina → Maringá" },
-  { href: "/londrina-foz-do-iguacu",  label: "Londrina → Foz do Iguaçu" },
+  { href: "/londrina-guarulhos",           label: "Londrina → Guarulhos (GRU)" },
+  { href: "/londrina-sao-paulo",           label: "Londrina → São Paulo" },
+  { href: "/londrina-curitiba",            label: "Londrina → Curitiba" },
+  { href: "/transfer-congonhas-londrina",  label: "Londrina → Congonhas (CGH)" },
+  { href: "/londrina-maringa",             label: "Londrina → Maringá" },
+  { href: "/londrina-foz-do-iguacu",       label: "Londrina → Foz do Iguaçu" },
 ]
 
 const servicosLinks = [
-  { href: "/transfer-corporativo-londrina",          label: "Transfer Corporativo" },
-  { href: "/motorista-executivo-londrina",           label: "Motorista Executivo" },
-  { href: "/airport-transfer-londrina",              label: "Airport Transfer (LDB)" },
-  { href: "/transporte-terrestre-executivo-londrina",label: "Transporte Executivo" },
+  { href: "/transfer-corporativo-londrina",               label: "Transfer Corporativo" },
+  { href: "/motorista-executivo-londrina",                label: "Motorista Executivo" },
+  { href: "/airport-transfer-londrina",                   label: "Airport Transfer (LDB)" },
+  { href: "/transporte-terrestre-executivo-londrina",     label: "Transporte Executivo" },
+  { href: "/transporte-executivo-24-horas-londrina",      label: "Atendimento 24 Horas" },
 ]
 
 const mobileLinks = [
-  { href: "/",                                        label: "Home" },
-  { href: "/frota-executiva-londrina",               label: "Nossa Frota" },
-  { href: "/londrina-guarulhos",                     label: "Londrina → Guarulhos" },
-  { href: "/londrina-sao-paulo",                     label: "Londrina → São Paulo" },
-  { href: "/transfer-corporativo-londrina",          label: "Transfer Corporativo" },
-  { href: "/motorista-executivo-londrina",           label: "Motorista Executivo" },
-  { href: "/airport-transfer-londrina",              label: "Airport Transfer" },
-  { href: "/transporte-terrestre-executivo-londrina",label: "Transporte Executivo" },
-  { href: "/contato",                                label: "Contato" },
+  { href: "/",                                           label: "Home" },
+  { href: "/frota-executiva-londrina",                  label: "Nossa Frota" },
+  { href: "/londrina-guarulhos",                        label: "→ Guarulhos (GRU)" },
+  { href: "/londrina-sao-paulo",                        label: "→ São Paulo" },
+  { href: "/londrina-curitiba",                         label: "→ Curitiba" },
+  { href: "/transfer-congonhas-londrina",               label: "→ Congonhas (CGH)" },
+  { href: "/transfer-corporativo-londrina",             label: "Transfer Corporativo" },
+  { href: "/motorista-executivo-londrina",              label: "Motorista Executivo" },
+  { href: "/airport-transfer-londrina",                 label: "Airport Transfer" },
+  { href: "/transporte-executivo-24-horas-londrina",    label: "Atendimento 24 Horas" },
+  { href: "/transporte-terrestre-executivo-londrina",   label: "Transporte Executivo" },
+  { href: "/contato",                                   label: "Contato" },
 ]
 
 function WaIcon({ size = 16, color = "#0A0A0A" }: { size?: number; color?: string }) {

@@ -232,4 +232,37 @@ export const pageMetadata = {
     ogImageAlt: "Corporate Transfer Londrina Business Service",
   }),
 
+  londrinaCuritiba: buildMetadata({
+    title: "Transfer Londrina Curitiba | Executivo · BR-376 · 398 km",
+    description:
+      "Transfer executivo de Londrina para Curitiba em 398 km pela BR-376. " +
+      "Aeroporto Afonso Pena, hospitais, centros empresariais e eventos. " +
+      "Veículo premium, motorista profissional e nota fiscal.",
+    path: "/londrina-curitiba",
+    ogImage: "og-londrina-curitiba.jpg",
+    ogImageAlt: "Transfer Executivo Londrina Curitiba — 398 km BR-376",
+  }),
+
+  londrinaCongonhas: buildMetadata({
+    title: "Transfer Londrina Congonhas | CGH · Ponte Aérea · Executivo",
+    description:
+      "Transfer executivo de Londrina para o Aeroporto de Congonhas (CGH). " +
+      "Monitoramento de voo, embarque executivo e atendimento na ponte aérea SP-RJ. " +
+      "Saída calculada pelo horário do embarque.",
+    path: "/transfer-congonhas-londrina",
+    ogImage: "og-transfer-congonhas.jpg",
+    ogImageAlt: "Transfer Executivo Londrina Aeroporto Congonhas CGH",
+  }),
+
+  londrina24h: buildMetadata({
+    title: "Transporte Executivo 24 Horas Londrina | Madrugada e Emergência",
+    description:
+      "Transporte executivo 24 horas em Londrina. " +
+      "Voos de madrugada, hospitais, eventos noturnos e atendimento emergencial. " +
+      "Motorista disponível a qualquer hora, todos os dias.",
+    path: "/transporte-executivo-24-horas-londrina",
+    ogImage: "og-24-horas.jpg",
+    ogImageAlt: "Transporte Executivo 24 Horas Londrina — Disponível Sempre",
+  }),
+
 } as const
