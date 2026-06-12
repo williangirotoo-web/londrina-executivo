@@ -328,7 +328,7 @@ export default function LondrinaSaoPauloPage() {
               </div>
               <div style={{ background: "#141414", borderRadius: "8px", padding: "1.25rem", border: "1px solid #2A2A2A" }}>
                 <h3 style={{ fontWeight: 700, fontSize: "0.9rem", color: "#C9A84C", marginBottom: "0.5rem" }}>Hospitais e clínicas</h3>
-                <p style={{ color: "#6B6706", fontSize: "0.85rem", lineHeight: 1.65, margin: 0, color: "#6B6B6B" }}>
+                <p style={{ color: "#6B6B6B", fontSize: "0.85rem", lineHeight: 1.65, margin: 0 }}>
                   Hospital Albert Einstein (Morumbi), Hospital Sírio-Libanês (Bela Vista), A.C.Camargo e HCor.
                   Atendemos familiares e pacientes que precisam de transporte confortável para procedimentos em SP.
                 </p>
