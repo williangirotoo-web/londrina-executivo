@@ -431,6 +431,32 @@ export default function TransporteExecutivoLondrinaPage() {
           </div>
         </section>
 
+
+        {/* ════════ SERVIÇOS RELACIONADOS ════════ */}
+        <section style={{ background: "#141414", padding: "3.5rem 1.5rem", borderTop: "1px solid #1C1C1C" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto" }}>
+            <div style={{ width: "48px", height: "1px", background: "#C9A84C", marginBottom: "1.5rem" }} />
+            <h2 style={{ fontSize: "clamp(1.25rem,2.5vw,1.5rem)", fontWeight: 800, color: "#F0F0F0", marginBottom: "1.25rem" }}>
+              Serviços relacionados
+            </h2>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "0.875rem" }}>
+              {[
+                { href: "/frota-executiva-londrina",           label: "🚗 Frota Executiva Londrina" },
+                { href: "/transfer-corporativo-londrina",     label: "🤝 Transfer Corporativo" },
+                { href: "/motorista-executivo-londrina",      label: "💼 Motorista Executivo" },
+                { href: "/airport-transfer-londrina",         label: "✈️ Airport Transfer LDB" },
+                { href: "/londrina-guarulhos",                label: "🛬 Transfer Londrina → Guarulhos" },
+                { href: "/londrina-sao-paulo",                label: "🏙️ Transfer Londrina → São Paulo" },
+              ].map(l => (
+                <Link key={l.href} href={l.href}
+                  style={{ display: "inline-block", background: "#1C1C1C", color: "#A8A8A8", fontSize: "0.875rem", fontWeight: 500, padding: "0.625rem 1rem", borderRadius: "6px", border: "1px solid #2A2A2A", textDecoration: "none" }}>
+                  {l.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
         <footer style={{ background: "#0A0A0A", borderTop: "1px solid #1C1C1C", padding: "2rem 1.5rem" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", display: "flex", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", gap: "1rem" }}>
             <div>

@@ -138,6 +138,9 @@ export default function ContatoPage() {
           <div aria-hidden="true" style={{ position: "absolute", inset: 0, zIndex: 1, backgroundImage: "radial-gradient(circle at 70% 50%,rgba(201,168,76,.04) 0%,transparent 60%)" }} />
           <div aria-hidden="true" style={{ position: "absolute", inset: 0, backgroundImage: "radial-gradient(circle at 60% 50%, rgba(201,168,76,0.04) 0%, transparent 60%)" }} />
           <div style={{ maxWidth: "72rem", margin: "0 auto", position: "relative", zIndex: 1, textAlign: "center" }}>
+            <div style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "rgba(201,168,76,.1)", border: "1px solid rgba(201,168,76,.25)", borderRadius: "999px", padding: "5px 16px", marginBottom: "1.75rem" }}>
+              <span style={{ color: "#C9A84C", fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase" }}>📞 Contato · Londrina Executivo · 24h</span>
+            </div>
             <div style={{ width: "48px", height: "1px", background: "#C9A84C", margin: "0 auto 1.5rem" }} />
             <h1 style={{ fontSize: "clamp(2rem, 4.5vw, 3rem)", fontWeight: 900, color: "#F0F0F0", lineHeight: 1.1, letterSpacing: "-0.02em", marginBottom: "1.25rem" }}>
               Entre em Contato
@@ -156,6 +159,19 @@ export default function ContatoPage() {
             </a>
           </div>
         </section>
+
+
+        {/* ════ STICKY BAR ════ */}
+        <div style={{ background: "#0A0A0A", borderBottom: "1px solid rgba(201,168,76,.2)", padding: "0.875rem 1.5rem", display: "flex", flexWrap: "wrap", alignItems: "center", justifyContent: "space-between", gap: "1rem", position: "sticky", top: 0, zIndex: 50 }}>
+          <div>
+            <p style={{ fontWeight: 700, fontSize: "0.875rem", color: "#C9A84C", margin: 0 }}>Londrina Executivo</p>
+            <p style={{ fontSize: "0.75rem", color: "#6B6B6B", margin: 0 }}>Solicite um orçamento agora</p>
+          </div>
+          <a href={waContato} target="_blank" rel="noopener noreferrer"
+            style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "#C9A84C", color: "#0A0A0A", fontWeight: 700, fontSize: "0.875rem", padding: "0.65rem 1.25rem", borderRadius: "6px", textDecoration: "none", whiteSpace: "nowrap" }}>
+            <WhatsAppIcon color="#0A0A0A" size={16} /> WhatsApp
+          </a>
+        </div>
 
         {/* CANAIS */}
         <section aria-labelledby="canais-heading" style={{ background: "#141414", padding: "5rem 1.5rem" }}>
@@ -250,6 +266,41 @@ export default function ContatoPage() {
                   ))}
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+
+        {/* FAQ CONTATO */}
+        <section aria-labelledby="faq-contato-vis-heading" style={{ background: "#0A0A0A", padding: "5rem 1.5rem" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto" }}>
+            <div style={{ width: "48px", height: "1px", background: "#C9A84C", marginBottom: "1.5rem" }} />
+            <h2 id="faq-contato-vis-heading" style={{ fontSize: "clamp(1.375rem,2.8vw,1.875rem)", fontWeight: 800, color: "#F0F0F0", marginBottom: "3rem" }}>
+              Perguntas frequentes
+            </h2>
+            <div style={{ maxWidth: "720px", display: "flex", flexDirection: "column", gap: "1rem" }}>
+              {contatoFaqItems.map((f, i) => (
+                <details key={i} style={{ background: "#141414", borderRadius: "8px", border: "1px solid #2A2A2A", overflow: "hidden" }}>
+                  <summary style={{ padding: "1.25rem 1.5rem", fontWeight: 700, fontSize: "0.9rem", color: "#F0F0F0", cursor: "pointer", listStyle: "none", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                    {f.question}<span aria-hidden="true" style={{ color: "#C9A84C", fontSize: "1rem", flexShrink: 0, marginLeft: "1rem" }}>▾</span>
+                  </summary>
+                  <div style={{ padding: "0 1.5rem 1.5rem", color: "#A8A8A8", lineHeight: 1.7, fontSize: "0.9rem" }}>{f.answer}</div>
+                </details>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* LINKS INTERNOS */}
+        <section style={{ background: "#141414", padding: "3.5rem 1.5rem", borderTop: "1px solid #1C1C1C" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto" }}>
+            <p style={{ color: "#6B6B6B", fontSize: "0.8rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.08em", marginBottom: "1rem" }}>Conheça nossos serviços</p>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "0.75rem" }}>
+              {servicos.map(l => (
+                <Link key={l.href} href={l.href} style={{ display: "inline-block", background: "#1C1C1C", color: "#A8A8A8", fontSize: "0.8rem", fontWeight: 500, padding: "7px 14px", borderRadius: "6px", border: "1px solid #2A2A2A", textDecoration: "none" }}>
+                  {l.label}
+                </Link>
+              ))}
             </div>
           </div>
         </section>

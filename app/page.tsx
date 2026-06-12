@@ -284,6 +284,19 @@ export default function HomePage() {
           </div>
         </section>
 
+
+        {/* ════ STICKY BAR ════ */}
+        <div style={{ background: "#0A0A0A", borderBottom: "1px solid rgba(201,168,76,.2)", padding: "0.875rem 1.5rem", display: "flex", flexWrap: "wrap", alignItems: "center", justifyContent: "space-between", gap: "1rem", position: "sticky", top: 0, zIndex: 50 }}>
+          <div>
+            <p style={{ fontWeight: 700, fontSize: "0.875rem", color: "#C9A84C", margin: 0 }}>Londrina Executivo</p>
+            <p style={{ fontSize: "0.75rem", color: "#6B6B6B", margin: 0 }}>Transfer · Motorista Executivo · Transporte Corporativo</p>
+          </div>
+          <a href={waHome} target="_blank" rel="noopener noreferrer"
+            style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "#C9A84C", color: "#0A0A0A", fontWeight: 700, fontSize: "0.875rem", padding: "0.65rem 1.25rem", borderRadius: "6px", textDecoration: "none", whiteSpace: "nowrap" }}>
+            <WaIcon color="#0A0A0A" size={16} /> WhatsApp
+          </a>
+        </div>
+
         {/* ════════ 2. ROTAS ════════ */}
         <section aria-labelledby="rotas-heading" style={{ background: "#0d0d0d", padding: "5rem 1.5rem" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto" }}>
