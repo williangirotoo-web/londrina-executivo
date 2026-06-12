@@ -317,20 +317,28 @@ export default function HomePage() {
               ))}
             </div>
 
-            {/* ESPAÇO PARA FOTO REAL — preparado para substituição futura */}
-            <div style={{ marginTop: "3rem", borderRadius: "12px", overflow: "hidden", border: "1px solid #2A2A2A", background: "#141414", minHeight: "280px", display: "flex", alignItems: "center", justifyContent: "center", position: "relative" }}>
-              <div style={{ textAlign: "center", padding: "2rem" }}>
-                <div style={{ width: "64px", height: "64px", borderRadius: "50%", background: "rgba(201,168,76,.1)", border: "1px solid rgba(201,168,76,.2)", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 1rem", fontSize: "1.75rem" }}>
-                  🚗
+            {/* Grid de imagens reais da frota */}
+            <div style={{ marginTop: "3rem", display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: "0.75rem" }}>
+              {[
+                { src: "/fotos/corolla-cross-executivo.webp", alt: "Toyota Corolla Cross utilizado para transporte executivo em Londrina", label: "Toyota Corolla Cross" },
+                { src: "/fotos/jeep-compass-executivo.webp",  alt: "Jeep Compass para viagens corporativas e transfer executivo",          label: "Jeep Compass" },
+                { src: "/fotos/t-cross-executivo.webp",       alt: "Volkswagen T-Cross para transporte executivo em Londrina",            label: "Volkswagen T-Cross" },
+                { src: "/fotos/van-executiva-7-lugares.webp", alt: "Van executiva para grupos e transporte corporativo",                  label: "Van Executiva · 7 lugares" },
+              ].map((v) => (
+                <div key={v.src} style={{ position: "relative", borderRadius: "10px", overflow: "hidden", border: "1px solid #2A2A2A", aspectRatio: "16/9" }}>
+                  <Image
+                    src={v.src}
+                    alt={v.alt}
+                    fill
+                    loading="lazy"
+                    sizes="(max-width: 768px) 50vw, 25vw"
+                    style={{ objectFit: "cover", objectPosition: "center" }}
+                  />
+                  <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, background: "linear-gradient(to top, rgba(10,10,10,0.85), transparent)", padding: "0.75rem 1rem" }}>
+                    <p style={{ color: "#F0F0F0", fontSize: "0.75rem", fontWeight: 600, margin: 0 }}>{v.label}</p>
+                  </div>
                 </div>
-                <p style={{ color: "#6B6B6B", fontSize: "0.875rem", marginBottom: "0.25rem" }}>
-                  Frota executiva — fotografia em breve
-                </p>
-                <p style={{ color: "#2A2A2A", fontSize: "0.75rem", margin: 0 }}>
-                  {/* SUBSTITUIR: <Image src="/fotos/veiculo-principal.jpg" alt="Veículo executivo Londrina Executivo" fill style={{objectFit:'cover'}} /> */}
-                  Veículo premium · Climatizado · Revisado
-                </p>
-              </div>
+              ))}
             </div>
           </div>
         </section>
