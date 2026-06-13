@@ -276,4 +276,35 @@ export const pageMetadata = {
     ogImageAlt: "Transporte Executivo para Hospitais em Londrina",
   }),
 
+  londrinaEventos: buildMetadata({
+    title: "Transporte Executivo para Eventos em Londrina | Grupos · Vans · VIP",
+    description:
+      "Transporte executivo para eventos corporativos, feiras, congressos e formaturas em Londrina. " +
+      "ExpoLondrina, convenções, palestrantes e grupos VIP. Vans executivas e sedans premium.",
+    path: "/transporte-executivo-eventos-londrina",
+    ogImage: "og-eventos-londrina.jpg",
+    ogImageAlt: "Transporte Executivo para Eventos em Londrina",
+  }),
+
+  londrinaHotel: buildMetadata({
+    title: "Transfer Hotel Londrina | Aeroporto ↔ Hotel · Executivo · Corporativo",
+    description:
+      "Transfer executivo aeroporto para hotel em Londrina. " +
+      "Bourbon, Blue Tree, Golden Blue, Comfort Suites e Slaviero. " +
+      "Monitoramento de voo, motorista na chegada e nota fiscal.",
+    path: "/transfer-hotel-londrina",
+    ogImage: "og-transfer-hotel.jpg",
+    ogImageAlt: "Transfer Hotel Londrina — Aeroporto para Hotel",
+  }),
+
+  londrinaParticular: buildMetadata({
+    title: "Motorista Particular Londrina | Por Hora · Viagens · Aeroporto · Eventos",
+    description:
+      "Motorista particular em Londrina para viagens pessoais, aeroporto, consultas, " +
+      "eventos sociais e deslocamentos por hora. Veículo climatizado, disponibilidade diária.",
+    path: "/motorista-particular-londrina",
+    ogImage: "og-motorista-particular.jpg",
+    ogImageAlt: "Motorista Particular em Londrina",
+  }),
+
 } as const

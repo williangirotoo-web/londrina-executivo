@@ -25,10 +25,12 @@ const rotasLinks = [
 const servicosLinks = [
   { href: "/transfer-corporativo-londrina",               label: "Transfer Corporativo" },
   { href: "/motorista-executivo-londrina",                label: "Motorista Executivo" },
+  { href: "/motorista-particular-londrina",               label: "Motorista Particular" },
   { href: "/airport-transfer-londrina",                   label: "Airport Transfer (LDB)" },
-  { href: "/transporte-terrestre-executivo-londrina",     label: "Transporte Executivo" },
-  { href: "/transporte-executivo-24-horas-londrina",      label: "Atendimento 24 Horas" },
+  { href: "/transfer-hotel-londrina",                     label: "Transfer Hotel" },
+  { href: "/transporte-executivo-eventos-londrina",       label: "Transporte para Eventos" },
   { href: "/transporte-hospital-londrina",                label: "Transporte para Hospitais" },
+  { href: "/transporte-executivo-24-horas-londrina",      label: "Atendimento 24 Horas" },
 ]
 
 const mobileLinks = [
