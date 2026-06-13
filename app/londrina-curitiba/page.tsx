@@ -369,6 +369,7 @@ export default function LondrinaCuritibaPage() {
                 { href: "/airport-transfer-londrina",                 label: "Airport Transfer (LDB)" },
                 { href: "/transfer-corporativo-londrina",             label: "Transfer Corporativo" },
                 { href: "/transporte-executivo-24-horas-londrina",    label: "Atendimento 24 horas" },
+                { href: "/transporte-hospital-londrina",             label: "Transporte para Hospitais" },
                 { href: "/contato",                                   label: "Solicitar orçamento" },
               ].map(l => (
                 <Link key={l.href} href={l.href} style={{ display: "inline-block", background: "#141414", color: "#A8A8A8", fontSize: "0.8rem", fontWeight: 500, padding: "7px 14px", borderRadius: "6px", border: "1px solid #2A2A2A", textDecoration: "none" }}>

@@ -28,6 +28,7 @@ const servicosLinks = [
   { href: "/airport-transfer-londrina",                   label: "Airport Transfer (LDB)" },
   { href: "/transporte-terrestre-executivo-londrina",     label: "Transporte Executivo" },
   { href: "/transporte-executivo-24-horas-londrina",      label: "Atendimento 24 Horas" },
+  { href: "/transporte-hospital-londrina",                label: "Transporte para Hospitais" },
 ]
 
 const mobileLinks = [

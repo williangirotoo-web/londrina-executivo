@@ -265,4 +265,15 @@ export const pageMetadata = {
     ogImageAlt: "Transporte Executivo 24 Horas Londrina — Disponível Sempre",
   }),
 
+  londrinaHospital: buildMetadata({
+    title: "Transporte para Hospital Londrina | Pacientes e Acompanhantes — Executivo",
+    description:
+      "Transporte executivo para hospitais e clínicas em Londrina. " +
+      "Hospital do Câncer, Hospital Evangélico, HU e Unimed. " +
+      "Veículo climatizado, motorista profissional e porta a porta. Disponível 24 horas.",
+    path: "/transporte-hospital-londrina",
+    ogImage: "og-transporte-hospital.jpg",
+    ogImageAlt: "Transporte Executivo para Hospitais em Londrina",
+  }),
+
 } as const
